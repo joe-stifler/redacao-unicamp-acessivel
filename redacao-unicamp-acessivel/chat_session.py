@@ -33,9 +33,7 @@ class ChatSession:
         self.session_id = str(uuid.uuid4())  # Generate a unique session ID
         self.persona_path = persona_path
         self.persona = None  # Initialize persona as None
-
-        # Load persona from file (if specified)
-        self.load_persona()
+        self.is_persona_initialized = False
 
         # Create the chat_history table if it doesn't exist
         if self.connection:
@@ -153,8 +151,13 @@ class ChatSession:
             # raise and exception with message asking to initilize the model
             raise ValueError("Model not initialized. Please update the model.")
 
-        # Add persona to the prompt if it's loaded
-        if self.persona:
+        # Add persona to the prompt if it's not loaded yet
+        if not self.is_persona_initialized:
+            self.is_persona_initialized = True
+
+            # Load persona from file (if specified)
+            self.load_persona()
+
             # Combine persona information into the prompt
             prompt = (
                 self.persona.get("beg_persona_content", "<beg_persona>\n")
@@ -163,12 +166,11 @@ class ChatSession:
                 + "\n"
                 + self.persona.get("end_persona_content", "\n<end_persona>")
                 + "\n"
-                + self.get_history_as_turns()
-                + "\nNew user message: "
+                + "\nNova mensagem do usuario: "
                 + message
             )
         else:
-            prompt = self.get_history_as_turns() + "\n\n--- " + message
+            prompt = message
 
         response_stream = self.model.send_stream_message(prompt)
 

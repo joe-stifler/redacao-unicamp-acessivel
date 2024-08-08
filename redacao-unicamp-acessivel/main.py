@@ -12,9 +12,18 @@ if "chat_session" not in st.session_state:
 
 chat_session = st.session_state.chat_session
 
+
+@st.cache_resource
+def create_gemini_model(model_name, gemini_api_key, model_temperature):
+    return GeminiModel(
+        model_name=model_name,
+        api_key=gemini_api_key,
+        temperature=float(model_temperature),
+    )
+
 # --- Get URL Parameters ---
 google_token = st.query_params.get("google_token")
-persona_name = st.query_params.get("persona_name", "empty")
+persona_name = st.query_params.get("persona_name", "dani_stella")
 model_familly = st.query_params.get("model_familly", "Gemini")
 model_name = st.query_params.get("model_name", "gemini-1.5-flash")
 model_temperature = st.query_params.get("model_temperature", 1.0)
@@ -24,9 +33,9 @@ model_temperature = st.query_params.get("model_temperature", 1.0)
 chat_session.persona_path = (
     "personas/" + persona_name + "/" + persona_name + ".json"
 )
-chat_session.load_persona()  # Reload the persona
 
 is_model_initialized = False
+
 
 if model_familly == "Mock":
     chat_session.update_model(
@@ -44,14 +53,12 @@ elif model_familly == "Gemini":
     if not gemini_api_key:
         st.warning("Por favor, forneça acima uma chave de API válida. Para criar uma chave, entre em: https://aistudio.google.com/app/apikey")
     else:
-        chat_session.update_model(
-            GeminiModel(
-                model_name=model_name,
-                api_key=gemini_api_key,
-                temperature=float(model_temperature),
-            )
+        gemini_model = create_gemini_model(
+            model_name,
+            gemini_api_key,
+            model_temperature
         )
-
+        chat_session.update_model(gemini_model)
         is_model_initialized = True
 else:
     raise "Familia de LLM invalida"
