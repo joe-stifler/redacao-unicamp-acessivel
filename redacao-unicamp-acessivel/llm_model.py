@@ -87,17 +87,12 @@ class GeminiModel(LLMBaseModel):
             self.name,
             generation_config=genai.types.GenerationConfig(
                 temperature=temperature,
-            ),
-            safety_settings={
-                "harassment": "block_only_high",
-                "hate_speech": "block_only_high",
-                "sexual": "block_only_high",
-                "dangerous": "block_only_high",
-            },
+            )
         )
+        self.chat = self.model.start_chat()
 
     def send_stream_message(self, message):
-        response_stream = self.model.generate_content(
+        response_stream = self.chat.send_message(
             message,
             stream=True,
         )
