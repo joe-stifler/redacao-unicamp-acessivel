@@ -67,3 +67,39 @@ class MockModel(LLMBaseModel):
         message_length = len(message)
 
         yield "User message length is " + str(message_length)
+
+
+class GeminiModel(LLMBaseModel):
+    def __init__(
+        self,
+        model_name,
+        api_key="",
+        temperature=None,  # Allow temperature to be optional
+        temperature_range=(0.0, 2.0)
+    ):
+        super().__init__(
+            model_name,
+            temperature,  # Pass the temperature to the superclass
+            temperature_range
+        )
+        genai.configure(api_key=api_key)
+        self.model = genai.GenerativeModel(
+            self.name,
+            generation_config=genai.types.GenerationConfig(
+                temperature=temperature,
+            ),
+            safety_settings={
+                "harassment": "block_only_high",
+                "hate_speech": "block_only_high",
+                "sexual": "block_only_high",
+                "dangerous": "block_only_high",
+            },
+        )
+
+    def send_stream_message(self, message):
+        response_stream = self.model.generate_content(
+            message,
+            stream=True,
+        )
+        for chunk in response_stream:
+            yield chunk.text
