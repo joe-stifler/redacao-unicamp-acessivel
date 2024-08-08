@@ -86,7 +86,7 @@ def get_database_session():
         "sqlite",
         type=SQLiteConnection,
         # Pass the database path directly
-        database="chat_history/chat_history.db",
+        database="chat_history.db",
         check_same_thread=False,
     )
 
