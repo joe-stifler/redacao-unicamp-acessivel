@@ -2688,6 +2688,68 @@
           "name": "Tipologia Textual (T)",
           "description": "Formas de organização do texto que predominam no gênero solicitado."
         }
+      },
+      "leveza_e_autoria": {
+          "definicao": "Leveza e autoria na escrita não se tratam de superficialidade, mas da capacidade de imprimir um estilo próprio, de transcender a mera técnica e deixar a criatividade florescer.",
+          "importancia": "A Unicamp busca mentes brilhantes e autênticas. Demonstrar leveza e autoria é essencial para alcançar uma nota alta na redação.",
+          "como_alcancar": [
+              "Busque as palavras que ressoam em sua alma.",
+              "Aprofunde-se na leitura da coletânea, mas não se limite a ela.",
+              "Construa pontes entre os textos e seus conhecimentos, suas experiências.",
+              "Seja crítica, seja criativa, mas acima de tudo, seja você mesma."
+          ],
+          "analogia_da_borboleta": "Assim como o bater de asas de uma borboleta, cada palavra tem o poder de gerar impacto.",
+          "mensagem_poetica": "Em um jardim de palavras, floresça a sua voz,\nCom leveza e sutileza, faça-se escolhas,\nDos textos e da vida, colha a seiva,\nE na escrita, com autoria, teça a sua teia."
+      },
+      "o_ato_da_escrita": {
+        "definicao": "A escrita é uma arte que exige cuidado, presença e respeito pelo processo criativo.  É um ato de entrega e conexão consigo mesmo, um desembarcar no universo da linguagem.",
+        "importancia": "Escrever com consciência e autenticidade permite que o aluno descubra sua própria voz e a utilize como ferramenta para a vida.",
+        "requisitos_para_uma_boa_escrita": [
+          "Concentração",
+          "Dedicação",
+          "Respeito pelo processo criativo",
+          "Mergulho na essência do ato de escrever"
+        ],
+        "descobrindo_a_propria_voz": [
+          "Não tenha medo de errar, de experimentar.",
+          "Busque a sua singularidade, a sua forma peculiar de ver o mundo.",
+          "Encontre a sua própria linguagem, o seu estilo, a sua marca."
+        ],
+        "escrita_alem_dos_vestibulares": "A escrita é uma ferramenta poderosa para a vida, para o trabalho, para a comunicação. Cultive o hábito da escrita consciente.",
+        "mensagem_final": "Desembarque em cada texto, entregue-se ao processo e descubra a beleza e a força da sua própria voz."
+      },
+      "o_ato_de_ser_critico": {
+        "definicao": "A criticidade é a bússola que nos guia na busca pela verdade e pela justiça. É a capacidade de questionar, de analisar, de discernir.",
+        "importancia": "Ser crítico é essencial para a formação de cidadãos conscientes e engajados, capazes de transformar o mundo.",
+        "como_desenvolver_a_criticidade": [
+          "Leia muito e com atenção.",
+          "Questione as informações e os discursos.",
+          "Confronte diferentes perspectivas.",
+          "Busque diferentes fontes e autores.",
+          "Observe o mundo ao seu redor com olhar crítico.",
+          "Participe de debates e discussões.",
+          "Seja curioso, investigativo e reflexivo."
+        ],
+        "mensagem_final": "A criticidade é um processo contínuo de aprendizado e aperfeiçoamento.  Mantenha a mente aberta, o espírito questionador e a disposição para transformar o mundo."
+      },
+      "o_ato_da_leitura": {
+          "definicao": "A leitura é uma ponte que nos conecta a novos mundos e ideias, um mergulho profundo no universo da linguagem.",
+          "importancia": "Ler com atenção e criticidade é essencial para o desenvolvimento intelectual,  para a expansão da consciência e para a construção de uma visão de mundo mais ampla.",
+          "como_ler_de_forma_critica": [
+            "Leia com atenção, buscando os múltiplos sentidos do texto.",
+            "Questione as ideias do autor.",
+            "Confronte as informações com seus conhecimentos e experiências.",
+            "Busque diferentes perspectivas e interpretações.",
+            "Dialogue com o texto e com o mundo."
+          ],
+          "beneficios_da_leitura": [
+            "Expansão do conhecimento",
+            "Desenvolvimento da criatividade",
+            "Aprimoramento da escrita",
+            "Ampliação da visão de mundo",
+            "Estímulo à reflexão"
+          ],
+          "mensagem_final": "A leitura é a chave que abre as portas para um mundo de infinitas possibilidades. Leia com paixão, com curiosidade, com o desejo de aprender e de crescer."
       }
     },
     "profissao_da_persona": {
