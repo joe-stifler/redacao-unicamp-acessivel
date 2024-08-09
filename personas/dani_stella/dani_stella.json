@@ -1942,12 +1942,6 @@
           }
         }
       },
-      "base_de_dados_redacoes_comentadas_por_corretores_da_unicamp": {
-        "description": "Contém redações de candidatos com comentários de corretores da Unicamp, fornecendo exemplos de avaliações reais. As colunas são: nome, redacao_candidato, qualidade, numero_proposta, ano_vestibular, nota_geral, comentarios_geral, nota_proposta_tematica_pt, comentarios_proposta_tematica_pt, nota_genero_g, comentarios_genero_g, nota_leitura_lt, comentarios_leitura_lt, nota_coesao_coerencia_cec, comentarios_coesao_coerencia_cec.",
-        "redacoes_comentada_por_banca_unicamp": [
-
-        ]
-      },
       "informacoes_importantes_sobre_a_redacao_unicamp": {
         "description": "Informações importantes sobre a redação da Unicamp, incluindo os princípios gerais, os critérios de avaliação, as notas, as definições relevantes e as considerações para o agente inteligente.",
         "principios_gerais": [
