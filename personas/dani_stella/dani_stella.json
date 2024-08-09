@@ -72,6 +72,51 @@
               "proposta": 1,
               "ano": 2020,
               "descricao": "Texto 1 da prova de redação da Unicamp de 2020",
+              "ano_2020_proposta_1_estatisticas": {
+                "estatisticas_gerais": {
+                  "media_notas_brutas": 7.8,
+                  "desvio_padrao_notas_brutas": 1.9,
+                  "porcentagem_escolhas": 37.7,
+                  "quartil_1": 6.5,
+                  "mediana": 8,
+                  "quartil_3": 9,
+                  "minimo": 0,
+                  "maximo": 12
+                },
+                "distribuicao_notas_brutas": {
+                  "descricao": "Histograma da Figura 19",
+                  "formato": "A distribuição das notas brutas do texto 1 é assimétrica à direita, com a maioria das notas concentradas na faixa de 6,5 a 9 pontos."
+                },
+                "estatisticas_por_area": {
+                  "ciencias_biologicas": {
+                    "media_notas_brutas": 8.5,
+                    "desvio_padrao_notas_brutas": 2,
+                    "porcentagem_escolhas": 37.5,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 20",
+                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Biológicas é assimétrica à direita, com a maioria das notas concentradas na faixa de 7,5 a 10 pontos."
+                    }
+                  },
+                  "ciencias_exatas": {
+                    "media_notas_brutas": 7.6,
+                    "desvio_padrao_notas_brutas": 1.9,
+                    "porcentagem_escolhas": 40.5,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 21",
+                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Exatas é assimétrica à direita, com a maioria das notas concentradas na faixa de 6,5 a 9 pontos."
+                    }
+                  },
+                  "ciencias_humanas": {
+                    "media_notas_brutas": 7.7,
+                    "desvio_padrao_notas_brutas": 1.9,
+                    "porcentagem_escolhas": 32.6,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 22",
+                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Humanas é assimétrica à direita, com a maioria das notas concentradas na faixa de 6,5 a 9 pontos."
+                    }
+                  }
+                }
+              },
               "interlocutores": {
                 "enunciador_i": "Colunista de uma revista eletrônica brasileira",
                 "interlocutor_i": "Ambientalistas de diferentes países",
@@ -181,51 +226,6 @@
                 }
               ],
               "expectativa_banca": "Na  primeira  proposta  de  redação,  os  candidatos  deveriam  assumir  o  papel  de  um(a)  colunista  de uma revista eletrônica especializada em temáticas ambientais, responsável por escrever uma matéria, a ser veiculada  em um  podcast, sobre a inter-relação  entre  biodiversidade  e  sociodiversidade  e sua  importância para  o  crescimento  sustentável  do  Brasil.  Ou  seja,  deveriam  escrever  um  texto  argumentativo  a  ser transmitido  oralmente.  Para  quem  não  soubesse  o  que  é  um  podcast,  a  prova  apresentava  uma  definição em boxe.  A  coletânea  oferecia  subsídios  para  que  os  candidatos  preparassem  esse  texto  a  ser  lido  em  voz alta  no  dia  da  gravação  do  podcast.  O  primeiro  excerto  apresentava  conceitos  que,  à  primeira  vista, poderiam ser desconhecidos, como biodiversidade e sociodiversidade (caráter multiétnico e multicultural do Brasil),  e  apontava  uma  associação  importante:  o  conhecimento  do  patrimônio  genético  nacional  pelas comunidades  tradicionais  e  locais  promove  desenvolvimento  sustentável.  As  definições  de  biodiversidade (200 mil espécies registradas em nossos biomas: Amazônia, Caatinga, Cerrado, Mata Atlântica, Pantanal e Pampa) e de sociodiversidade (350 etnias indígenas, com cerca de 270 diferentes línguas, e comunidades quilombolas,  caiçaras,  seringueiras  etc.)  foram  extraídas  do  site  oficial  do  Ministério  do  Meio  Ambiente  e associadas ao desenvolvimento sustentável do Brasil.  O segundo excerto foi o poema “O cerrado é milagre”, de Nicolas Behr. O poeta inicia seus versos despedindo-se da beleza natural do Cerrado (o pequizeiro, os jatobás, as perobas), ao mesmo tempo que celebra a harmonia ali existente antes de o correntão “passar e levar tudo”, cortando com a “faca fina do arado” toda a raiz, para que no lugar brotasse “soja, verdinha, verdinha”. Nos versos finais, Behr  indaga: “quem pagará o preço da destruição?”.  A futura geração (“os nossos netos”), ele mesmo responde. O poema trabalha com três tempos: o passado (quando o Cerrado existia de maneira pujante), o  presente (o Cerrado  é  destruído  para  dar  lugar  à  plantação  de  soja)  e  o  futuro  (quando  se  pergunta  sobre  as consequências do ecocídio). O passado é tratado nostalgicamente, ao passo que o futuro é entrevisto com certo  tom  de  desesperança:  a  destruição  ambiental  é  descrita  sob  uma  perspectiva  subjetiva  no  poema, diferentemente do que se observava nos outros excertos.  O  terceiro  excerto  da  coletânea  destacava  novamente  a  relevância  do  Cerrado  –  “onde se veem arbustos de galhos retorcidos”, e onde há o “mais importante sistema de captação e reserva de água do Brasil  fora  da  Amazônia”,  garantindo  “nove  das  principais  bacias  hidrográficas  do  país”  –  atualmente reduzido  à  metade  e  ameaçado  pelo  crescimento  do  agronegócio.  A  destruição  da  biodiversidade  no Cerrado  não  apenas  impacta  a  oferta  hídrica  como  também  desregula  o  clima  no  Centro-Sul  do  país. Enquanto os holofotes da mídia refletem as consequências do desmatamento na Amazônia, a proposta aqui foi  alertar  que  o  bioma  que  corre  maior  risco  no  Brasil  é  o  Cerrado.  A  recomendação  final  foi  favorável  à sustentabilidade: é possível investir na produção agrícola sem, contudo, desmatar. O  último  excerto  intensificava  o  tom  da  tragédia  anunciada:  uma  em  cada  oito  espécies  está  em extinção.  Os  predadores  são  a  expansão  agrícola,  a  urbanização,  a  mineração,  as  novas  infraestruturas. Se, por um lado, o Brasil tem um dos mais ricos ecossistemas do mundo, por outro, é um dos países mais ameaçados. No entanto, tal destruição da natureza  não se dá por  igual em todo o território nacional, pois, onde vivem povos tradicionais, a degradação é mais lenta, como é o caso dos indígenas na Amazônia: “por conhecerem  tão  intimamente  as  florestas,  eles  têm  uma  percepção  muito  antecipada  das  mudanças ambientais”, salienta Nurit Bensusan, da ONG Instituto Socioambiental (ISA). Como se vê, a coletânea trazia várias informações que poderiam ser mobilizadas como argumentos pelos candidatos na elaboração de seu texto para o podcast. A expectativa era a de que os melhores textos fossem  aqueles  que,  em  vez  de  lidarem  com  todos  os  excertos,  fizessem  um  recorte,  selecionando  e articulando argumentos.  Por  exemplo,  o  excerto  1  ressaltava  a  importância  das  comunidades  tradicionais  e  locais  para  a preservação  do  nosso  patrimônio  genético,  o  que  era  retomado  no  excerto  4,  em  que  eram  apontadas  as práticas sustentáveis dos indígenas na preservação da floresta amazônica. Os excertos 2 e 3, por sua vez, tinham  em  comum  a  preocupação  específica  com  a  destruição  do  Cerrado.  Os  candidatos  poderiam aproveitar os versos do poema como argumentos que indicassem a destruição causada pelo desenvolvimento  predatório  (a  soja  verdinha  toma  o  lugar  do  pequizeiro,  dos  jatobás,  das  perobas),  e associá-los  ao  excerto  3,  que  reforçava  o  desastre  causado  pela  expansão  do  agronegócio,  responsável pela redução do Cerrado à metade. Contudo, diferentemente da distopia do poema, o excerto 3 permitia aos candidatos vislumbrar um crescimento sustentável: produzir sem desmatar",
-              "ano_2020_proposta_1_estatisticas": {
-                "estatisticas_gerais": {
-                  "media_notas_brutas": 7.8,
-                  "desvio_padrao_notas_brutas": 1.9,
-                  "porcentagem_escolhas": 37.7,
-                  "quartil_1": 6.5,
-                  "mediana": 8,
-                  "quartil_3": 9,
-                  "minimo": 0,
-                  "maximo": 12
-                },
-                "distribuicao_notas_brutas": {
-                  "descricao": "Histograma da Figura 19",
-                  "formato": "A distribuição das notas brutas do texto 1 é assimétrica à direita, com a maioria das notas concentradas na faixa de 6,5 a 9 pontos."
-                },
-                "estatisticas_por_area": {
-                  "ciencias_biologicas": {
-                    "media_notas_brutas": 8.5,
-                    "desvio_padrao_notas_brutas": 2,
-                    "porcentagem_escolhas": 37.5,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 20",
-                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Biológicas é assimétrica à direita, com a maioria das notas concentradas na faixa de 7,5 a 10 pontos."
-                    }
-                  },
-                  "ciencias_exatas": {
-                    "media_notas_brutas": 7.6,
-                    "desvio_padrao_notas_brutas": 1.9,
-                    "porcentagem_escolhas": 40.5,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 21",
-                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Exatas é assimétrica à direita, com a maioria das notas concentradas na faixa de 6,5 a 9 pontos."
-                    }
-                  },
-                  "ciencias_humanas": {
-                    "media_notas_brutas": 7.7,
-                    "desvio_padrao_notas_brutas": 1.9,
-                    "porcentagem_escolhas": 32.6,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 22",
-                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Humanas é assimétrica à direita, com a maioria das notas concentradas na faixa de 6,5 a 9 pontos."
-                    }
-                  }
-                }
-              },
               "ano_2020_proposta_1_exemplos_de_redacoes_comentadas": {
                   "Acima da Média": {
                     "numero_proposta": 1,
@@ -266,6 +266,51 @@
               "proposta": 2,
               "ano": 2020,
               "descricao": "Texto 2 da prova de redação da Unicamp de 2020",
+              "ano_2020_proposta_2_estatisticas": {
+                "estatisticas_gerais": {
+                  "media_notas_brutas": 8.6,
+                  "desvio_padrao_notas_brutas": 1.5,
+                  "porcentagem_escolhas": 62.3,
+                  "quartil_1": 7.5,
+                  "mediana": 8.5,
+                  "quartil_3": 9.5,
+                  "minimo": 0,
+                  "maximo": 12
+                },
+                "distribuicao_notas_brutas": {
+                  "descricao": "Histograma da Figura 23",
+                  "formato": "A distribuição das notas brutas do texto 2 é aproximadamente normal, com a maioria das notas concentradas na faixa de 7,5 a 9,5 pontos."
+                },
+                "estatisticas_por_area": {
+                  "ciencias_biologicas": {
+                    "media_notas_brutas": 9,
+                    "desvio_padrao_notas_brutas": 1.5,
+                    "porcentagem_escolhas": 62.5,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 24",
+                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Biológicas é assimétrica à direita, com a maioria das notas concentradas na faixa de 8 a 10 pontos."
+                    }
+                  },
+                  "ciencias_exatas": {
+                    "media_notas_brutas": 8.4,
+                    "desvio_padrao_notas_brutas": 1.5,
+                    "porcentagem_escolhas": 59.5,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 25",
+                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Exatas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7,5 a 9,5 pontos."
+                    }
+                  },
+                  "ciencias_humanas": {
+                    "media_notas_brutas": 8.5,
+                    "desvio_padrao_notas_brutas": 1.5,
+                    "porcentagem_escolhas": 67.4,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 26",
+                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Humanas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7,5 a 9,5 pontos."
+                    }
+                  }
+                }
+              },
               "interlocutores": {
                 "enunciador_i": "Escritor(a) que publica uma crônica em uma revista semanal",
                 "interlocutor_i": "Leitores da revista",
@@ -345,51 +390,6 @@
                 }
               ],
               "expectativa_banca": "A expectativa nesta segunda proposta de redação era a de que os candidatos: 1) compreendessem o conceito de  micromachismo; 2) colocassem-se no papel de um(a) cronista que, embora se considerasse livre  de  preconceitos  de  gênero,  se  dava  conta  de  seu  micromachismo;  3)  escrevessem  uma  crônica  na qual, obrigatoriamente, narrassem um episódio vivenciado pelo(a) cronista, relacionando-o à atitude micromachista escolhida e expondo seus sentimentos. Esperava-se que os candidatos, tendo em mente a questão norteadora da proposta (o micromachismo enraizado em nossa sociedade), deixassem claro que o(a) cronista tomava consciência do micromachismo  a  partir  do  momento  em  que  lia  a  matéria  de  Ianko  López  no  El  País  e  se  dava  conta  de que  considerava  natural  uma  atitude  micromachista.  Esperava-se  que,  no  desenrolar  da  sua  crônica,  os candidatos não confundissem atitudes  machistas  e  micromachistas, ou seja, que indicassem ter entendido que  são  conceitos  distintos,  o  que  deveria  ser  compreendido  tanto  pela  explicação  sobre  “atitudes micromachistas” (excerto 1) quanto pela narrativa de Chimamanda Ngozi Adichie (excerto 2), que explicava o processo de “normalização de atitudes”. A  matéria  do  El  País  (excerto  1)  explicava  a  diferença  entre  o  machismo  institucionalizado  ou macromachismo, presente em contextos sociais, econômicos, jurídicos e familiares, causa das reivindicações feministas desde os anos 1970, e o micromachismo, resquício de um machismo culturalmente  enraizado:  um machismo  sutil,  interiorizado  em  nós,  e  que  às  vezes  escapa  e  se  revela  por meio  de  pensamentos  e  atos  do  cotidiano  –  uma  armadilha  mesmo  para  aqueles  que  se  consideram progressistas, livres de preconceito e a favor da igualdade de gêneros. A narrativa de Chimamanda (excerto 2), por sua vez, não apenas exemplificava o gênero crônica como também descrevia um exemplo clássico de  micromachismo  praticado  no  ambiente  escolar:  só  os  meninos  eram  aprovados  para  ser  monitores  da classe.  Da  instituição  escolar  para  o  mundo  do  trabalho,  o  micromachismo  se  repete  ciclicamente  até  ser normalizado e, consequentemente, normatizado  – critica a autora africana. E há ainda quem negue (como Louis, seu amigo de infância) que o mundo é mais difícil para as mulheres só porque são mulheres.  Em relação ao gênero solicitado, os candidatos deveriam elaborar uma crônica. Além de considerarem como exemplos crônicas que circulam em diferentes suportes (livros, jornais, revistas, redes sociais), poderiam também se apoiar na descrição resumida do gênero apresentada em um boxe na prova e, sobretudo, seguir “passo a passo” as tarefas da proposta: a) narrar o episódio micromachista vivenciado, b)  relacioná-lo  a  alguma  atitude  micromachista  selecionada  da  lista  do  El  País,  para,  enfim,  c)  expor reflexões e sentimentos despertados a partir do reconhecimento de que tal atitude vivenciada, e inconscientemente naturalizada como normal, era, na verdade, micromachista.  Os candidatos deveriam então recorrer  aos tipos de  texto narrativo e  expositivo para construir sua crônica,  de  forma  a  caracterizar,  de  maneira  produtiva,  a  personagem-cronista,  ou  outras  personagens envolvidas,  se  esta  fosse  uma  opção  do  seu  projeto  de  texto.  Para  tecer  suas  reflexões  e  expor  seus sentimentos,  o(a)  narrador(a)-cronista  poderia  também  recorrer  ao  tipo  de  texto  argumentativo  para,  por exemplo, fundamentar a importância de sua tomada de consciência sobre o  micromachismo. A expectativa era  a  de  que  os  melhores  textos  fossem  aqueles  cuja  situação  de  produção  da  proposta  pudesse  ser explorada  tanto  para  a  caracterização  da  personagem-cronista  quanto  para  a  construção  do  tempo  da narrativa,  de  tal  forma  que  as  ações  e  os  sentimentos  vivenciados  fossem  construídos  em  função  da tomada  de  consciência,  constituída  como  o  momento  de  ruptura  ou  mesmo  como  o  clímax  do  episódio narrado. Note-se que os candidatos deveriam selecionar, entre as 13 opções da matéria do  El País (excerto 1),  a  que  considerassem  mais  interessante  para  suscitar  reflexões  e,  a  partir  disso,  construir  sua  crônica. Cabe ressaltar que eles não tinham a obrigação de propor mudanças de atitudes para o futuro; podiam, por exemplo, apenas reanalisar alguma situação já vivida sob uma nova perspectiva e repensá-la, sem que isso acarretasse um replanejamento de ações futuras ou uma mudança de atitude.",
-              "ano_2020_proposta_2_estatisticas": {
-                "estatisticas_gerais": {
-                  "media_notas_brutas": 8.6,
-                  "desvio_padrao_notas_brutas": 1.5,
-                  "porcentagem_escolhas": 62.3,
-                  "quartil_1": 7.5,
-                  "mediana": 8.5,
-                  "quartil_3": 9.5,
-                  "minimo": 0,
-                  "maximo": 12
-                },
-                "distribuicao_notas_brutas": {
-                  "descricao": "Histograma da Figura 23",
-                  "formato": "A distribuição das notas brutas do texto 2 é aproximadamente normal, com a maioria das notas concentradas na faixa de 7,5 a 9,5 pontos."
-                },
-                "estatisticas_por_area": {
-                  "ciencias_biologicas": {
-                    "media_notas_brutas": 9,
-                    "desvio_padrao_notas_brutas": 1.5,
-                    "porcentagem_escolhas": 62.5,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 24",
-                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Biológicas é assimétrica à direita, com a maioria das notas concentradas na faixa de 8 a 10 pontos."
-                    }
-                  },
-                  "ciencias_exatas": {
-                    "media_notas_brutas": 8.4,
-                    "desvio_padrao_notas_brutas": 1.5,
-                    "porcentagem_escolhas": 59.5,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 25",
-                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Exatas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7,5 a 9,5 pontos."
-                    }
-                  },
-                  "ciencias_humanas": {
-                    "media_notas_brutas": 8.5,
-                    "desvio_padrao_notas_brutas": 1.5,
-                    "porcentagem_escolhas": 67.4,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 26",
-                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Humanas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7,5 a 9,5 pontos."
-                    }
-                  }
-                }
-              },
               "ano_2020_proposta_2_exemplos_de_redacoes_comentadas": {
                   "Acima da Média": {
                     "numero_proposta": 2,
@@ -429,11 +429,103 @@
           },
           "ano_2021": {
             "ano_2021_descricao": "Prova de redação com duas propostas de textos para o candidato escolher e executar apenas uma.",
+            "ano_2021_estatisticas": {
+              "estatisticas_gerais": {
+                "media_notas_brutas": 8.4,
+                "desvio_padrao_notas_brutas": 1.6,
+                "porcentagem_zeros": 0.08,
+                "quartil_1": 7.5,
+                "mediana": 8.5,
+                "quartil_3": 9.5,
+                "minimo": 0,
+                "maximo": 12
+              },
+              "distribuicao_notas_brutas": {
+                "descricao": "Histograma da Figura 7",
+                "formato": "A distribuição das notas brutas de redação é aproximadamente normal, com a maioria das notas concentradas na faixa de 7 a 10 pontos."
+              },
+              "correlacao_com_questoes": {
+                "descricao": "Gráfico de dispersão da Figura 15",
+                "formato": "O gráfico de dispersão mostra uma correlação positiva moderada entre as notas das questões e as notas da redação (γgk = 0.387).",
+                "gamma_goodman_kruskal": 0.387
+              },
+              "estatisticas_por_area": {
+                "ciencias_biologicas": {
+                  "media_notas_brutas": 8.8,
+                  "desvio_padrao_notas_brutas": 1.6,
+                  "distribuicao_notas_brutas": {
+                    "descricao": "Histograma da Figura 8 (parte CB)",
+                    "formato": "A distribuição das notas brutas de redação para Ciências Biológicas é aproximadamente normal, com a maioria das notas concentradas na faixa de 8 a 10 pontos."
+                  }
+                },
+                "ciencias_exatas": {
+                  "media_notas_brutas": 8.3,
+                  "desvio_padrao_notas_brutas": 1.5,
+                  "distribuicao_notas_brutas": {
+                    "descricao": "Histograma da Figura 8 (parte CE)",
+                    "formato": "A distribuição das notas brutas de redação para Ciências Exatas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7 a 9 pontos."
+                  }
+                },
+                "ciencias_humanas": {
+                  "media_notas_brutas": 8.4,
+                  "desvio_padrao_notas_brutas": 1.6,
+                  "distribuicao_notas_brutas": {
+                    "descricao": "Histograma da Figura 8 (parte CH)",
+                    "formato": "A distribuição das notas brutas de redação para Ciências Humanas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7 a 9 pontos."
+                  }
+                }
+              }
+            },
             "ano_2021_proposta_1": {
               "id": 1,
               "numero": 1,
               "ano": 2021,
               "descricao": "Texto 1 da prova de redação de 2021",
+              "ano_2021_proposta_1_estatisticas": {
+                "estatisticas_gerais": {
+                  "media_notas_brutas": 8.5,
+                  "desvio_padrao_notas_brutas": 1.6,
+                  "porcentagem_escolhas": 41.9,
+                  "quartil_1": 7.5,
+                  "mediana": 8.5,
+                  "quartil_3": 9.5,
+                  "minimo": 0,
+                  "maximo": 12
+                },
+                "distribuicao_notas_brutas": {
+                  "descricao": "Histograma da Figura 11",
+                  "formato": "A distribuição das notas brutas do texto 1 é assimétrica à direita, com a maioria das notas concentradas na faixa de 7.5 a 9.5 pontos."
+                },
+                "estatisticas_por_area": {
+                  "ciencias_biologicas": {
+                    "media_notas_brutas": 8.9,
+                    "desvio_padrao_notas_brutas": 1.6,
+                    "porcentagem_escolhas": 38.8,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 12 (parte CB)",
+                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Biológicas é assimétrica à direita, com a maioria das notas concentradas na faixa de 8 a 10 pontos."
+                    }
+                  },
+                  "ciencias_exatas": {
+                    "media_notas_brutas": 8.3,
+                    "desvio_padrao_notas_brutas": 1.6,
+                    "porcentagem_escolhas": 43.5,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 12 (parte CE)",
+                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Exatas é assimétrica à direita, com a maioria das notas concentradas na faixa de 7.5 a 9.5 pontos."
+                    }
+                  },
+                  "ciencias_humanas": {
+                    "media_notas_brutas": 8.4,
+                    "desvio_padrao_notas_brutas": 1.6,
+                    "porcentagem_escolhas": 41.9,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 12 (parte CH)",
+                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Humanas é assimétrica à direita, com a maioria das notas concentradas na faixa de 7.5 a 9.5 pontos."
+                    }
+                  }
+                }
+              },
               "interlocutores": {
                 "enunciador_i": "Candidato a vereador e ex-aluno da escola",
                 "interlocutor_i": "Estudantes da escola reunidos em assembleia",
@@ -585,51 +677,6 @@
                 }
               ],
               "expectativa_banca": "Na primeira proposta, os/as vestibulandos/as devem assumir o papel de uma candidato/a a vereador/a convidado/a a se pronunciar através de um discurso na assembleia estudantil de sua antiga escola, onde se enfrenta um impasse: o que fazer com as estátuas de figura históricas do estado de São Paulo localizadas em seu pátio, mais especificamente do bandeirante Anhanguera e do padre jesuíta José de Anchieta? O/A candidato/a a vereador/a deve, então, elaborar um discurso político, a ser proferido oralmente aos estudantes. Nele, deve fazer um balanço das duas visões em disputa (remoção ou permanência das estátuas) para, finalmente, assumir uma posição, propondo uma resolução para o dilema.\nOs/As candidatos/as podem se valer da leitura dos textos disponíveis na coletânea e de outros pertinentes à discussão. O primeiro texto apresentado, retirado do Dicionário Houaiss, é o verbete “bandeirante”, que reproduz definições do senso comum sobre tal figura histórica por meio de escolhas lexicais que a valorizam positivamente: “que ou o que abre caminho”, “desbravador”, “precursor”, “pioneiro”.\nO segundo texto traz o posicionamento do jornalista e sociólogo Demétrio Magnoli, contrário à derrubada de estátuas. O autor considera que derrubar monumentos é “exterminar a memória social”, e que uma estátua não celebra o presente, mas apenas atesta que, no passado, o homenageado foi celebrado; o que pode, inclusive, nos servir de alerta. Há, nas palavras de Magnoli, expressões que podem ser bem aproveitadas se lidas com atenção pelos candidatos: é o caso da ironia contida em “vândalos do bem”, ou das críticas subentendidas em “princípio covarde”, “cicatriz da história”, “desejo tirânico”, para citar alguns exemplos.\nO terceiro texto é uma tirinha de Alexandre Beck, que critica de maneira contraintuitiva os bandeirantes. No primeiro quadro, o leitor é levado a entender que os vândalos seriam os pichadores que teriam investido contra um monumento, mas, no segundo, como é típico do gênero, a expectativa é quebrada, ficando claro que o referente de “vândalos” são os “bandeirantes”, que teriam destruído aldeias e escravizado povos. Espera-se que os candidatos captem a perspectiva crítica da tirinha, percebendo a ambiguidade nela contida e reconhecendo os verdadeiros vândalos.\nNo quarto texto, Thiago Amparo defende a derrubada de monumentos no caso de homenagens a genocidas. Argumenta que tal atitude seria prova de civilidade, na medida em que rejeita celebrar quem provocou mortes e sofrimento. Para o autor, monumentos dotados de valor artístico poderiam ser transportados para museus ou cemitérios de esculturas; já os desprovidos de tal valor poderiam simplesmente ser derrubados — uma sugestão para quem optasse por um posicionamento mais nuançado com relação ao tema.\nO quinto texto, retirado de um artigo publicado pelo historiador Luiz Felipe Alencastro, expõe fatos e faz considerações a respeito do modo como os missionários no Brasil, nomeadamente os padres Anchieta e Antônio Vieira, não só aprovaram, como também contribuíram para o tráfico e a escravidão dos negros. Tais fatos servem como argumentos para defender a derrubada da estátua do Padre Anchieta e, por extensão, de outros jesuítas, mas que não necessariamente pesam contra os bandeirantes.\nO último texto, parte de uma matéria da revista Mundo Estranho, explicita os motivos das expedições dos bandeirantes, que consistiam na recaptura de pessoas escravizadas e na escravização de indígenas. Tais motivações podem servir de argumento a favor da derrubada dos monumentos dos bandeirantes, mas não dos jesuítas.\nNota-se que a coletânea oferece subsídios para que os candidatos preparem seu texto argumentativo adotando um posicionamento diante da questão; tal posicionamento pode alinhar-se a um dos polos da disputa — remoção ou permanência — ou promover algum tipo de modulação entre as alternativas. Os candidatos que optarem por defender a retirada das estátuas e sua destruição material podem argumentar que esses monumentos carregam valores coloniais, escravagistas, patriarcais, como sugerem os textos 5 e 6 da coletânea. Os que preferirem advogar pela manutenção dos monumentos podem destacar seu valor artístico e histórico, como direciona a leitura do texto 2. Os candidatos podem também assumir perspectivas mais modalizadas, como defender uma ressignificação das estátuas, por meio de sua remoção para outros espaços (museus, cemitérios de esculturas etc., como sugere o texto 4), através de intervenções educativas (colocar placas informativas nas estátuas, promover aulas de história sobre bandeirantes e jesuítas, fomentar debates sobre escravidão e colonialismo envolvendo negros e indígenas, questionar o sentido de vandalismo, como sugere o texto 3) ou ainda através de Intervenções artísticas (grafite etc.). A expectativa é de que as melhores redações sejam aquelas capazes de criar argumentos consistentes para tensionar as diferentes posições que envolvem esse dilema.",
-              "ano_2021_proposta_1_estatisticas": {
-                "estatisticas_gerais": {
-                  "media_notas_brutas": 8.5,
-                  "desvio_padrao_notas_brutas": 1.6,
-                  "porcentagem_escolhas": 41.9,
-                  "quartil_1": 7.5,
-                  "mediana": 8.5,
-                  "quartil_3": 9.5,
-                  "minimo": 0,
-                  "maximo": 12
-                },
-                "distribuicao_notas_brutas": {
-                  "descricao": "Histograma da Figura 11",
-                  "formato": "A distribuição das notas brutas do texto 1 é assimétrica à direita, com a maioria das notas concentradas na faixa de 7.5 a 9.5 pontos."
-                },
-                "estatisticas_por_area": {
-                  "ciencias_biologicas": {
-                    "media_notas_brutas": 8.9,
-                    "desvio_padrao_notas_brutas": 1.6,
-                    "porcentagem_escolhas": 38.8,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 12 (parte CB)",
-                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Biológicas é assimétrica à direita, com a maioria das notas concentradas na faixa de 8 a 10 pontos."
-                    }
-                  },
-                  "ciencias_exatas": {
-                    "media_notas_brutas": 8.3,
-                    "desvio_padrao_notas_brutas": 1.6,
-                    "porcentagem_escolhas": 43.5,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 12 (parte CE)",
-                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Exatas é assimétrica à direita, com a maioria das notas concentradas na faixa de 7.5 a 9.5 pontos."
-                    }
-                  },
-                  "ciencias_humanas": {
-                    "media_notas_brutas": 8.4,
-                    "desvio_padrao_notas_brutas": 1.6,
-                    "porcentagem_escolhas": 41.9,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 12 (parte CH)",
-                      "formato": "A distribuição das notas brutas do texto 1 para Ciências Humanas é assimétrica à direita, com a maioria das notas concentradas na faixa de 7.5 a 9.5 pontos."
-                    }
-                  }
-                }
-              },
               "ano_2021_proposta_1_exemplos_de_redacoes_comentadas": {
                 "Acima da Média": {
                     "numero_proposta": 1,
@@ -676,6 +723,51 @@
               "numero": 2,
               "ano": 2021,
               "descricao": "Texto 2 da prova de redação de 2021",
+              "ano_2021_proposta_2_estatisticas": {
+                "estatisticas_gerais": {
+                  "media_notas_brutas": 8.4,
+                  "desvio_padrao_notas_brutas": 1.5,
+                  "porcentagem_escolhas": 58.1,
+                  "quartil_1": 7.5,
+                  "mediana": 8.5,
+                  "quartil_3": 9.5,
+                  "minimo": 2,
+                  "maximo": 12
+                },
+                "distribuicao_notas_brutas": {
+                  "descricao": "Histograma da Figura 13",
+                  "formato": "A distribuição das notas brutas do texto 2 é aproximadamente normal, com a maioria das notas concentradas na faixa de 7,5 a 9,5 pontos."
+                },
+                "estatisticas_por_area": {
+                  "ciencias_biologicas": {
+                    "media_notas_brutas": 8.7,
+                    "desvio_padrao_notas_brutas": 1.5,
+                    "porcentagem_escolhas": 61.2,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 14 (parte CB)",
+                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Biológicas é aproximadamente normal, com a maioria das notas concentradas na faixa de 8 a 9.5 pontos."
+                    }
+                  },
+                  "ciencias_exatas": {
+                    "media_notas_brutas": 8.3,
+                    "desvio_padrao_notas_brutas": 1.4,
+                    "porcentagem_escolhas": 56.5,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 14 (parte CE)",
+                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Exatas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7.5 a 9 pontos."
+                    }
+                  },
+                  "ciencias_humanas": {
+                    "media_notas_brutas": 8.3,
+                    "desvio_padrao_notas_brutas": 1.5,
+                    "porcentagem_escolhas": 58.1,
+                    "distribuicao_notas_brutas": {
+                      "descricao": "Histograma da Figura 14 (parte CH)",
+                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Humanas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7,5 a 9 pontos."
+                    }
+                  }
+                }
+              },
               "interlocutores": {
                 "enunciador_i": "Pessoa em situação de vulnerabilidade socioeconômica",
                 "interlocutor_i": "Descendentes do enunciador (futuras gerações)",
@@ -825,51 +917,6 @@
                 }
               ],
               "expectativa_banca": "Na segunda proposta de redação, solicita-se que os candidatos se imaginem em uma situação de vulnerabilidade socioeconômica que os coloque sob o risco de contrair o vírus da Covid-19. Registra-se, ainda, a negligência do Estado, que não adota medidas eficazes para evitar que trabalhadores sejam contagiados. O tema subjacente a essa situação é, portanto, a necropolítica, que os candidatos devem denunciar por meio de um registro escrito: uma entrada de um diário.\nNesse diário, o candidato deve assumir a perspectiva discursiva de um trabalhador para narrar um episódio em que se encontre exposto ao contágio da Covid-19 e, então, denunciar a atuação de um Estado negligente em relação à saúde dos mais vulneráveis. Em seu texto, o narrador-personagem pode deixar aflorar seu sentimento de indignação, mas também de resistência; nesse sentido, seu diário torna-se um testemunho histórico acerca dos acontecimentos extraordinários da atual pandemia e um alerta às gerações futuras sobre a necropolítica vivenciada no presente.\nA banca preocupou-se inicialmente em esclarecer o gênero textual solicitado, o diário, para, em seguida, nos textos 1 e 2 da coletânea, explicar o conceito-chave da proposta: a necropolítica. O primeiro texto, retirado de uma entrevista com a pesquisadora Rosane Borges, apresenta a definição de tal conceito, criado pelo filósofo Achille Mbembe. Com ele são questionados os limites da soberania do Estado, quando suas ações, sustentadas por premissas coloniais, racistas e capitalistas, acabam por determinar quem deve viver e quem deve morrer. Para a entrevistada, racismo, capitalismo e necropolítica seriam indissociáveis. Na lógica capitalista do descarte, são os corpos negros os mais excluídos, justamente aqueles que, como escravizados, foram fundamentais para a acumulação do capital. Eles são agora desnecessários, não interessam mais ao sistema, são massa sobrante do mercado de trabalho. São, por isso, marginalizados e constituem a maioria subalternizada e desempregada do Brasil. Como corpos negros descartáveis, podem ser alvo de tudo, inclusive da morte.\nO segundo texto da coletânea destaca os efeitos sociais da Covid-19. Se, por um lado, o vírus é um fato biológico que, “por si só, não discrimina”, mas, ao contrário, nos trata “com igualdade, nos colocando igualmente diante do risco de adoecer” e de morrer, a dinâmica do capitalismo, por outro, com sua brutal desigualdade social e econômica, imprimiria uma discriminação movida pelos poderes do “nacionalismo, do racismo, da xenofobia e do capitalismo”. Diante desse cenário de injustiças estruturais, estabelece-se a “distinção espúria entre vidas passíveis de luto e aquelas não passíveis de luto”. O argumento principal de Judith Butler centra-se no modo como a estrutura de poder do capitalismo gera não apenas desigualdade socioeconômica, mas também uma multidão de vidas dispensáveis.\nOs textos 3 e 4 sugerem, por sua vez, possíveis narrativas a serem construídas pelos candidatos. São imagens que oferecem subsídios na criação de seus episódios. A foto de Pedro Conforte (texto 3), por exemplo, flagra o contraste entre um homem branco, de máscara, fazendo sua atividade física, e um homem negro, também de máscara, que carrega as mercadorias em uma bicicleta: provavelmente um entregador que leva compras feitas on-line a consumidores salvaguardados em suas residências. Ambos são suscetíveis de contrair o vírus, mas a foto expõe que há os que podem e os que não podem deixar de sair; os que podem ou não fazer home office; enfim, os que podem sair a bel-prazer e os que devem sair para fazer seu trabalho.\nJá o quarto texto traz um recorte de uma história em quadrinhos, narrada por Triscila Oliveira e ilustrada por Leandro Assis. Ela descreve vidas de trabalhadores informais e registrados, que se arriscam diariamente no transporte coletivo quando se deslocam para o seu trabalho. É o “novo normal” estabelecido pela pandemia, aqui tratado com ironia: “novo normal” para o patrão ou para o empregado? Para o primeiro, a pandemia pode ter instaurado um “novo normal” em sua rotina; para o segundo, o “novo normal” nada traz de efetivamente “novo”, apenas a precariedade de sempre: o transporte público lotado e, ainda, o risco de contrair a Covid-19.\nNo último texto, Ruy Castro elenca provas da negligência do chefe de governo brasileiro durante a pandemia: “negou a gravidade do problema, insultou os coveiros, promoveu aglomerações e espalhou desinformação” ao ridicularizar o distanciamento social, a higienização e o uso de máscara, e ao promover um remédio sem eficácia comprovada contra a Covid-19, além de constantemente questionar a eficiência das vacinas. Ao negar a ciência, agiu na contramão da tarefa de salvar vidas: ignorou medidas para contenção da doença, deixou mofar testes e atribuiu poderes políticos à vacina.",
-              "ano_2021_proposta_2_estatisticas": {
-                "estatisticas_gerais": {
-                  "media_notas_brutas": 8.4,
-                  "desvio_padrao_notas_brutas": 1.5,
-                  "porcentagem_escolhas": 58.1,
-                  "quartil_1": 7.5,
-                  "mediana": 8.5,
-                  "quartil_3": 9.5,
-                  "minimo": 2,
-                  "maximo": 12
-                },
-                "distribuicao_notas_brutas": {
-                  "descricao": "Histograma da Figura 13",
-                  "formato": "A distribuição das notas brutas do texto 2 é aproximadamente normal, com a maioria das notas concentradas na faixa de 7,5 a 9,5 pontos."
-                },
-                "estatisticas_por_area": {
-                  "ciencias_biologicas": {
-                    "media_notas_brutas": 8.7,
-                    "desvio_padrao_notas_brutas": 1.5,
-                    "porcentagem_escolhas": 61.2,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 14 (parte CB)",
-                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Biológicas é aproximadamente normal, com a maioria das notas concentradas na faixa de 8 a 9.5 pontos."
-                    }
-                  },
-                  "ciencias_exatas": {
-                    "media_notas_brutas": 8.3,
-                    "desvio_padrao_notas_brutas": 1.4,
-                    "porcentagem_escolhas": 56.5,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 14 (parte CE)",
-                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Exatas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7.5 a 9 pontos."
-                    }
-                  },
-                  "ciencias_humanas": {
-                    "media_notas_brutas": 8.3,
-                    "desvio_padrao_notas_brutas": 1.5,
-                    "porcentagem_escolhas": 58.1,
-                    "distribuicao_notas_brutas": {
-                      "descricao": "Histograma da Figura 14 (parte CH)",
-                      "formato": "A distribuição das notas brutas do texto 2 para Ciências Humanas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7,5 a 9 pontos."
-                    }
-                  }
-                }
-              },
               "ano_2021_proposta_2_exemplos_de_redacoes_comentadas": {
                 "Acima da Média": {
                     "numero_proposta": 2,
@@ -903,53 +950,6 @@
                     "comentarios_leitura_lt": "A candidata utiliza superficialmente o texto 5 da coletânea, sem articulá-lo com a narrativa e com a denúncia da necropolítica. A leitura é limitada e não contribui para a qualidade do texto.",
                     "comentarios_coesao_coerencia_cec": "O texto apresenta problemas de coesão, com frases  desconexas  e  quebras  sintáticas. A linguagem é simples  e  o  vocabulário  é  limitado.",
                     "comentario_geral": ""
-                }
-              }
-            },
-            "ano_2021_estatisticas": {
-              "estatisticas_gerais": {
-                "media_notas_brutas": 8.4,
-                "desvio_padrao_notas_brutas": 1.6,
-                "porcentagem_zeros": 0.08,
-                "quartil_1": 7.5,
-                "mediana": 8.5,
-                "quartil_3": 9.5,
-                "minimo": 0,
-                "maximo": 12
-              },
-              "distribuicao_notas_brutas": {
-                "descricao": "Histograma da Figura 7",
-                "formato": "A distribuição das notas brutas de redação é aproximadamente normal, com a maioria das notas concentradas na faixa de 7 a 10 pontos."
-              },
-              "correlacao_com_questoes": {
-                "descricao": "Gráfico de dispersão da Figura 15",
-                "formato": "O gráfico de dispersão mostra uma correlação positiva moderada entre as notas das questões e as notas da redação (γgk = 0.387).",
-                "gamma_goodman_kruskal": 0.387
-              },
-              "estatisticas_por_area": {
-                "ciencias_biologicas": {
-                  "media_notas_brutas": 8.8,
-                  "desvio_padrao_notas_brutas": 1.6,
-                  "distribuicao_notas_brutas": {
-                    "descricao": "Histograma da Figura 8 (parte CB)",
-                    "formato": "A distribuição das notas brutas de redação para Ciências Biológicas é aproximadamente normal, com a maioria das notas concentradas na faixa de 8 a 10 pontos."
-                  }
-                },
-                "ciencias_exatas": {
-                  "media_notas_brutas": 8.3,
-                  "desvio_padrao_notas_brutas": 1.5,
-                  "distribuicao_notas_brutas": {
-                    "descricao": "Histograma da Figura 8 (parte CE)",
-                    "formato": "A distribuição das notas brutas de redação para Ciências Exatas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7 a 9 pontos."
-                  }
-                },
-                "ciencias_humanas": {
-                  "media_notas_brutas": 8.4,
-                  "desvio_padrao_notas_brutas": 1.6,
-                  "distribuicao_notas_brutas": {
-                    "descricao": "Histograma da Figura 8 (parte CH)",
-                    "formato": "A distribuição das notas brutas de redação para Ciências Humanas é aproximadamente normal, com a maioria das notas concentradas na faixa de 7 a 9 pontos."
-                  }
                 }
               }
             }
