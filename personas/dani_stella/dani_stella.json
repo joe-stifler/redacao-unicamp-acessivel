@@ -2528,6 +2528,565 @@
               }
           ]
       },
+      "operadores_argumentativos": {
+          "descricao": "Operadores argumentativos são como os sinais de trânsito do seu texto, guiando o leitor pelas ideias e mostrando como elas se conectam. Dominar esses operadores é fundamental para construir uma argumentação sólida e persuasiva.",
+          "definicao": "Elementos linguísticos que guiam a sequência do discurso, conectando enunciados e construindo a coerência textual. São marcas importantes na argumentação, orientando o leitor na compreensão das relações entre ideias.",
+          "classificacao_gramatical": [
+            {
+              "descricao": "Advérbios, preposições, conjunções, locuções adverbiais, prepositivas e conjuntivas."
+            },
+            {
+              "descricao": "Palavras que não se enquadram nas classes gramaticais tradicionais, como denotadores de inclusão e exclusão."
+            }
+          ],
+          "tipos_e_funcoes": [
+            {
+              "nome": "Adição",
+              "descricao": "Somam argumentos para uma conclusão",
+              "exemplos": [
+                "e",
+                "também",
+                "ainda",
+                "nem"
+              ]
+            },
+            {
+              "nome": "Finalidade",
+              "descricao": "Indicam o propósito de uma ação",
+              "exemplos": [
+                "a fim de",
+                "para",
+                "com o objetivo de"
+              ]
+            },
+            {
+              "nome": "Causa e Consequência",
+              "descricao": "Estabelecem relações de causa e efeito",
+              "exemplos": [
+                "porque",
+                "visto que",
+                "uma vez que",
+                "pois"
+              ]
+            },
+            {
+              "nome": "Explicação",
+              "descricao": "Justificam ou esclarecem um enunciado",
+              "exemplos": [
+                "porque",
+                "que",
+                "já que",
+                "pois"
+              ]
+            },
+            {
+              "nome": "Oposição",
+              "descricao": "Contrapõem argumentos com conclusões contrárias",
+              "exemplos": [
+                "mas",
+                "porém",
+                "contudo",
+                "embora",
+                "apesar de"
+              ]
+            },
+            {
+              "nome": "Condição",
+              "descricao": "Apresentam hipóteses ou condições para a realização de um fato",
+              "exemplos": [
+                "caso",
+                "se",
+                "contanto que"
+              ]
+            },
+            {
+              "nome": "Tempo",
+              "descricao": "Indicam circunstâncias temporais",
+              "exemplos": [
+                "em pouco tempo",
+                "logo que",
+                "depois que",
+                "quando"
+              ]
+            },
+            {
+              "nome": "Proporção",
+              "descricao": "Relacionam fatos simultâneos",
+              "exemplos": [
+                "à medida que",
+                "ao passo que"
+              ]
+            },
+            {
+              "nome": "Conformidade",
+              "descricao": "Expressam acordo ou concordância",
+              "exemplos": [
+                "para",
+                "segundo",
+                "conforme",
+                "de acordo com"
+              ]
+            },
+            {
+              "nome": "Conclusão",
+              "descricao": "Introduzem conclusões baseadas em argumentos anteriores",
+              "exemplos": [
+                "portanto",
+                "então",
+                "assim",
+                "logo"
+              ]
+            },
+            {
+              "nome": "Alternativa",
+              "descricao": "Apresentam opções ou possibilidades",
+              "exemplos": [
+                "ou",
+                "ou...ou",
+                "quer...quer"
+              ]
+            },
+            {
+              "nome": "Comparação",
+              "descricao": "Estabelecem relações de comparação",
+              "exemplos": [
+                "mais...que",
+                "menos que",
+                "tão...como"
+              ]
+            },
+            {
+              "nome": "Esclarecimento",
+              "descricao": "Esclarecem um enunciado anterior",
+              "exemplos": [
+                "vale dizer",
+                "ou seja",
+                "isto é"
+              ]
+            },
+            {
+              "nome": "Inclusão",
+              "descricao": "Destacam o argumento mais forte",
+              "exemplos": [
+                "até",
+                "mesmo",
+                "inclusive"
+              ]
+            },
+            {
+              "nome": "Exclusão",
+              "descricao": "Indicam exclusão entre orações",
+              "exemplos": [
+                "só",
+                "somente",
+                "apenas"
+              ]
+            }
+          ],
+          "ditado_sabio": "Dominar os operadores argumentativos é como ter um mapa na mão: você sabe para onde ir e como chegar lá, construindo um caminho lógico e persuasivo."
+      },
+      "generos_do_discurso": {
+        "descricao": "Mergulhe no mundo dos gêneros do discurso, explorando conceitos chave e suas nuances. Descubra como a teoria de Bakhtin pode te ajudar a entender a estrutura e a função dos textos, além de desvendar a relação entre enunciado e oração, e as características do enunciado.",
+        "base_text": {
+          "title": "Gênero do Discurso",
+          "author": "Mikhail Bakhtin",
+          "source": "Livro de mesmo nome ou na coletânea \"Estética da Criação Verbal\""
+        },
+        "elements_of_enunciation": [
+          {
+            "nome": "Conteúdo Temático",
+            "descricao": "Aquilo sobre o que o texto fala",
+            "example": "Aborto, feminicídio"
+          },
+          {
+            "nome": "Construção Composicional",
+            "descricao": "Estrutura geral do texto",
+            "example": "Introdução, desenvolvimento, conclusão"
+          },
+          {
+            "nome": "Estilo",
+            "descricao": "Escolhas lexicais, gramaticais e fraseológicas que o autor faz",
+            "example": "Formal, informal, uso de figuras de linguagem"
+          }
+        ],
+        "relationship_between_elements": [
+          {
+            "descricao": "Os três elementos estão interligados e se influenciam mutuamente."
+          },
+          {
+            "descricao": "O desenvolvimento do conteúdo temático está relacionado à estrutura composicional e ao estilo."
+          }
+        ],
+        "enunciation_vs_genre": [
+          {
+            "nome": "Enunciado",
+            "descricao": "Conceito de natureza geral, abrangendo qualquer fala ou texto."
+          },
+          {
+            "nome": "Gênero Discursivo",
+            "descricao": "Modo típico em que os enunciados são concretizados, com características específicas de conteúdo, estilo e composição."
+          }
+        ],
+        "diversity_of_genres": [
+          {
+            "descricao": "Existem inúmeros gêneros discursivos, tanto orais quanto escritos, desde simples réplicas até obras complexas."
+          },
+          {
+            "descricao": "Essa diversidade pode dificultar o estudo e a classificação dos gêneros."
+          }
+        ],
+        "primary_vs_secondary_genres": [
+          {
+            "nome": "Primários",
+            "descricao": "Fortemente ligados à realidade concreta, ao tempo e ao espaço de sua realização",
+            "example": "Conversa, bilhete"
+          },
+          {
+            "nome": "Secundários",
+            "descricao": "Mais distantes da realidade imediata, com maior elaboração ideológica e podendo englobar gêneros primários",
+            "example": "Romance, tratado científico"
+          }
+        ],
+        "individual_style_vs_genre_style": [
+          {
+            "descricao": "Todo sujeito tem um estilo próprio, mas ele se modula de acordo com o gênero discursivo."
+          },
+          {
+            "descricao": "Alguns gêneros valorizam mais o estilo individual do que outros."
+          }
+        ],
+        "dialogism_and_dialogical_relationships": [
+          {
+            "descricao": "Todo enunciado é tecido entre relações dialógicas, retomando enunciados anteriores e considerando a resposta futura do interlocutor."
+          },
+          {
+            "descricao": "O dialogismo se manifesta não apenas no conteúdo temático, mas também no estilo e na construção composicional."
+          }
+        ],
+        "active_position_of_the_interlocutor": [
+          {
+            "descricao": "O interlocutor nunca é passivo, mas responde ativamente ao enunciado, mesmo que de forma interna ou com efeito retardado."
+          },
+          {
+            "descricao": "O falante/escrevente sempre considera a resposta do interlocutor ao produzir o enunciado."
+          }
+        ],
+        "differences_between_enunciation_and_sentence": [
+          {
+            "nome": "Alternância de Sujeitos",
+            "descricao": "Enunciado: Possui alternância de sujeitos, representando um diálogo ou interação entre diferentes vozes.",
+            "descricao_sentence": "Oração: Não possui alternância de sujeitos, pertencendo a um único enunciador."
+          },
+          {
+            "nome": "Contato com a Realidade Imediata",
+            "descricao": "Enunciado: Tem contato com a realidade exterior, podendo suscitar respostas e interagir com o mundo.",
+            "descricao_sentence": "Oração: Não tem contato direto com a realidade, relacionando-se apenas com outras orações dentro do enunciado."
+          },
+          {
+            "nome": "Contato com Enunciados Alheios",
+            "descricao": "Enunciado: Dialoga com outros enunciados, estabelecendo relações intertextuais e respondendo a vozes anteriores.",
+            "descricao_sentence": "Oração: Não possui essa capacidade de diálogo direto com outros enunciados."
+          },
+          {
+            "nome": "Plenitude Semântica",
+            "descricao": "Enunciado: Apresenta uma completude de sentido, expressando a posição discursiva do autor e permitindo a compreensão global da mensagem.",
+            "descricao_sentence": "Oração: Possui significado, mas não necessariamente transmite um sentido completo ou a posição do autor."
+          },
+          {
+            "nome": "Capacidade de Suscitar Resposta",
+            "descricao": "Enunciado: Tem a capacidade de gerar respostas e interações por parte do interlocutor.",
+            "descricao_sentence": "Oração: Não possui essa capacidade de forma plena, dependendo do contexto do enunciado para gerar uma resposta."
+          },
+          {
+            "nome": "Autoria",
+            "descricao": "Enunciado: Possui autor no sentido bakhtiniano, ou seja, alguém responsável pela mensagem e pelo seu impacto no mundo.",
+            "descricao_sentence": "Oração: Não possui autor nesse sentido, pois não expressa necessariamente uma posição ou responsabilidade."
+          }
+        ],
+        "exemplos_enunciation_and_sentence": [
+          {
+            "nome": "Oração",
+            "text": "\"Seria curioso, mas nem tanto extenso, e, aliás, desnecessário ao entendimento da obra.\" (Memórias Póstumas de Brás Cubas)",
+            "descricao": "Possui significado, mas não transmite um sentido completo ou a posição do autor sem o contexto da obra."
+          },
+          {
+            "nome": "Enunciado",
+            "text": "O romance Memórias Póstumas de Brás Cubas como um todo.",
+            "descricao": "Expressa a visão irônica e crítica de Machado de Assis sobre a sociedade da época."
+          }
+        ],
+        "conclusion_enunciation_and_sentence": "A distinção entre enunciado e oração é fundamental para compreender os gêneros do discurso, pois estes são formas típicas de enunciados, com características específicas de conteúdo, estilo e composição que refletem a interação entre sujeitos e a construção de sentidos.",
+        "characteristics_of_enunciation": [
+          {
+            "nome": "Conclusibilidade Específica",
+            "descricao": "Refere-se à capacidade do enunciado de concluir um tema específico dentro dos limites do texto ou fala.",
+            "aspects": [
+              {
+                "nome": "Exauribilidade do Objeto e do Sentido",
+                "descricao": "Dizer tudo o que se pretende sobre um tema, considerando o contexto e a recepção do enunciado."
+              },
+              {
+                "nome": "Projeto Discursivo/Vontade Discursiva",
+                "descricao": "Intenção do falante/escrevente ao produzir o enunciado, moldando-o de acordo com o gênero escolhido."
+              },
+              {
+                "nome": "Formas Típicas Composicionais e do Gênero do Acabamento",
+                "descricao": "Estrutura e formato do gênero que indicam a conclusão do enunciado."
+              }
+            ]
+          },
+          {
+            "nome": "Expressividade e Entonação",
+            "descricao": "Todo enunciado expressa uma entonação, um modo avaliativo do enunciador em relação ao tema e às vozes alheias.",
+            "types_of_intonation": [
+              {
+                "nome": "Expressiva",
+                "descricao": "Relacionada ao conteúdo e ao sentido do enunciado",
+                "example": "Ironia, humor, respeito"
+              },
+              {
+                "nome": "Gramatical",
+                "descricao": "Relacionada à estrutura da oração",
+                "example": "Afirmação, negação, interrogação"
+              }
+            ]
+          },
+          {
+            "nome": "Dialogismo e Relações Dialógicas",
+            "descricao": "Todo enunciado está inserido em um contexto de diálogo, retomando enunciados anteriores e considerando a resposta futura do interlocutor.",
+            "aspects": [
+              {
+                "descricao": "As palavras do outro são sempre presentes, mesmo que não sejam citadas explicitamente."
+              },
+              {
+                "descricao": "O enunciador recobre as palavras alheias com sua própria entonação, criando uma dupla expressividade."
+              }
+            ]
+          }
+        ],
+        "monological_enunciation_a_myth": [
+          {
+            "descricao": "Não existe enunciado verdadeiramente monológico, pois todo enunciado dialoga com vozes anteriores e considera a resposta futura do interlocutor."
+          },
+          {
+            "descricao": "Mesmo em gêneros que parecem monológicos (ex: monólogo, palestra), há sempre um diálogo implícito com outras vozes e discursos."
+          }
+        ],
+        "addressee_and_style": [
+          {
+            "descricao": "Todo gênero discursivo tem um destinatário, mesmo que presumido, que influencia o estilo e a composição do enunciado."
+          },
+          {
+            "descricao": "O falante/escrevente molda seu enunciado considerando a recepção do destinatário e as características do gênero."
+          }
+        ],
+        "exemplos_of_enunciation_characteristics": [
+          {
+            "nome": "Conclusibilidade Específica",
+            "example": "Uma telenovela que se aproxima do final, com resolução dos conflitos e casamento dos protagonistas."
+          },
+          {
+            "nome": "Entonação Expressiva",
+            "example": "Um discurso irônico que utiliza um tom sério para transmitir uma crítica."
+          },
+          {
+            "nome": "Dialogismo",
+            "example": "Um artigo científico que cita outros autores e responde a debates anteriores na área."
+          },
+          {
+            "nome": "Destinatário e Estilo",
+            "example": "Um e-mail formal para um chefe e um e-mail informal para um amigo."
+          }
+        ],
+        "ditado_sabio": "Compreender os gêneros do discurso é como desvendar um mapa: cada gênero é um caminho único que nos leva a um destino específico, com suas próprias paisagens e desafios."
+      },
+      "conectivos": {
+        "descricao": "Conectivos são as peças que unem as ideias em um texto, criando um fluxo lógico e coeso. Dominar os conectivos é essencial para uma redação de qualidade, especialmente em vestibulares. Aqui, você encontrará uma análise detalhada dos conectivos e suas funções, além de dicas para utilizá-los com maestria.",
+        "definicao": "Conectivos são palavras ou expressões que conectam elementos textuais (frases, orações, períodos, parágrafos), estabelecendo relações de sentido e contribuindo para a coesão e coerência do texto.",
+        "importancia": [
+          {
+            "nome": "Organização",
+            "descricao": "Estruturam o texto, tornando-o mais claro e fácil de compreender."
+          },
+          {
+            "nome": "Coesão Textual",
+            "descricao": "Garantem a fluidez e a progressão temática, mostrando como as ideias se relacionam."
+          },
+          {
+            "nome": "Coerência",
+            "descricao": "Contribuem para a construção do sentido global do texto, evitando contradições e ambiguidades."
+          }
+        ],
+        "tipos_e_funcoes": [
+          {
+            "nome": "Soma",
+            "descricao": "Adicionam informações",
+            "exemplos": [
+              "e",
+              "também",
+              "além disso"
+            ]
+          },
+          {
+            "nome": "Conclusão",
+            "descricao": "Finalizam um raciocínio",
+            "exemplos": [
+              "portanto",
+              "assim",
+              "em resumo"
+            ]
+          },
+          {
+            "nome": "Contraposição",
+            "descricao": "Apresentam ideias opostas",
+            "exemplos": [
+              "mas",
+              "porém",
+              "entretanto"
+            ]
+          },
+          {
+            "nome": "Alternância",
+            "descricao": "Indicam opções ou escolhas",
+            "exemplos": [
+              "ou...ou",
+              "ora...ora"
+            ]
+          },
+          {
+            "nome": "Comparação",
+            "descricao": "Estabelecem relações de semelhança ou diferença",
+            "exemplos": [
+              "mais...que",
+              "tão...quanto"
+            ]
+          },
+          {
+            "nome": "Explicação",
+            "descricao": "Esclarecem causas ou consequências",
+            "exemplos": [
+              "pois",
+              "porque",
+              "já que"
+            ]
+          },
+          {
+            "nome": "Conformidade",
+            "descricao": "Expressam concordância",
+            "exemplos": [
+              "conforme",
+              "segundo",
+              "de acordo com"
+            ]
+          },
+          {
+            "nome": "Condição",
+            "descricao": "Apresentam hipóteses ou condições",
+            "exemplos": [
+              "se",
+              "caso",
+              "a menos que"
+            ]
+          },
+          {
+            "nome": "Proporção",
+            "descricao": "Indicam relações de proporcionalidade",
+            "exemplos": [
+              "à medida que",
+              "quanto mais"
+            ]
+          },
+          {
+            "nome": "Finalidade",
+            "descricao": "Expressam o propósito de uma ação",
+            "exemplos": [
+              "a fim de",
+              "para que"
+            ]
+          },
+          {
+            "nome": "Exemplificação",
+            "descricao": "Introduzem exemplos",
+            "exemplos": [
+              "por exemplo",
+              "isto é"
+            ]
+          },
+          {
+            "nome": "Dúvida",
+            "descricao": "Expressam incerteza",
+            "exemplos": [
+              "talvez",
+              "possivelmente"
+            ]
+          },
+          {
+            "nome": "Certeza",
+            "descricao": "Enfatizam a certeza de uma afirmação",
+            "exemplos": [
+              "certamente",
+              "com certeza"
+            ]
+          },
+          {
+            "nome": "Negação",
+            "descricao": "Expressam ideias negativas",
+            "exemplos": [
+              "nunca",
+              "jamais",
+              "de modo algum"
+            ]
+          },
+          {
+            "nome": "Ordem/Frequência/Sucessão",
+            "descricao": "Organizam a sequência de eventos",
+            "exemplos": [
+              "primeiramente",
+              "depois",
+              "frequentemente"
+            ]
+          },
+          {
+            "nome": "Surpresa",
+            "descricao": "Indicam algo inesperado",
+            "exemplos": [
+              "de repente",
+              "inesperadamente"
+            ]
+          },
+          {
+            "nome": "Reformulação",
+            "descricao": "Retomam e reformulam uma ideia",
+            "exemplos": [
+              "em outras palavras",
+              "ou melhor"
+            ]
+          },
+          {
+            "nome": "Resumo",
+            "descricao": "Sintetizam informações",
+            "exemplos": [
+              "em síntese",
+              "resumindo"
+            ]
+          }
+        ],
+        "notas_importantes": [
+          {
+            "nome": "Uso Adequado",
+            "descricao": "O uso adequado dos conectivos é fundamental para a qualidade da redação, especialmente em vestibulares."
+          },
+          {
+            "nome": "Relação de Sentido",
+            "descricao": "É importante escolher o conectivo que melhor expressa a relação de sentido desejada."
+          },
+          {
+            "nome": "Variedade",
+            "descricao": "A variedade de conectivos enriquece o texto e demonstra domínio da língua."
+          }
+        ],
+        "wise_saying": "Aprender a usar os conectivos é como aprender a tecer uma tapeçaria: cada fio é importante para criar um todo harmonioso e significativo."
+      },
       "leveza_e_autoria": {
           "definicao": "Leveza e autoria na escrita não se tratam de superficialidade, mas da capacidade de imprimir um estilo próprio, de transcender a mera técnica e deixar a criatividade florescer.",
           "importancia": "A Unicamp busca mentes brilhantes e autênticas. Demonstrar leveza e autoria é essencial para alcançar uma nota alta na redação.",
