@@ -30,8 +30,8 @@ class ChatSession:
         self.model = None
         self.system = system
         self.connection = connection
-        self.session_id = str(uuid.uuid4())  # Generate a unique session ID
         self.persona_path = persona_path
+        self.session_id = str(uuid.uuid4())  # Generate a unique session ID
         self.persona = None  # Initialize persona as None
         self.is_persona_initialized = False
 
@@ -52,8 +52,10 @@ class ChatSession:
                 """
             )
 
-    def load_persona(self):
+    def load_persona(self, persona_path):
         """Loads persona from a JSON file, allowing for subfolders."""
+        self.persona_path = persona_path
+
         # Check if a persona is specified
         if self.persona_path:
             # Load persona JSON
@@ -154,9 +156,6 @@ class ChatSession:
         # Add persona to the prompt if it's not loaded yet
         if not self.is_persona_initialized:
             self.is_persona_initialized = True
-
-            # Load persona from file (if specified)
-            self.load_persona()
 
             # Combine persona information into the prompt
             prompt = (
