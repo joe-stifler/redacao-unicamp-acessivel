@@ -164,8 +164,9 @@ if prompt_input:
 
     # Send prompt to chosen model and stream response
     with st.chat_message("assistant", avatar=teacher_emoji):
-        try:
-            response_stream = chat_session.send_stream_message(prompt_input)
-            response = st.write_stream(response_stream)
-        except Exception as e:
-            st.error("Error: " + str(e))
+        with st.spinner(""):
+            try:
+                response_stream = chat_session.send_stream_message(prompt_input)
+                response = st.write_stream(response_stream)
+            except Exception as e:
+                st.error("Error: " + str(e))
