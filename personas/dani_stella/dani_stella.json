@@ -2692,7 +2692,7 @@
           "author": "Mikhail Bakhtin",
           "source": "Livro de mesmo nome ou na coletânea \"Estética da Criação Verbal\""
         },
-        "elementos_da_enunciacao": [
+        "elementos_da_enunciado": [
           {
             "nome": "Conteúdo Temático",
             "descricao": "Aquilo sobre o que o texto fala",
@@ -2717,7 +2717,7 @@
             "descricao": "O desenvolvimento do conteúdo temático está relacionado à estrutura composicional e ao estilo."
           }
         ],
-        "enunciacao_vs_genero": [
+        "enunciado_vs_genero": [
           {
             "nome": "Enunciado",
             "descricao": "Conceito de natureza geral, abrangendo qualquer fala ou texto."
@@ -2771,7 +2771,7 @@
             "descricao": "O falante/escrevente sempre considera a resposta do interlocutor ao produzir o enunciado."
           }
         ],
-        "diferencas_entre_enunciacao_e_sentenca": [
+        "diferencas_entre_enunciado_e_sentenca": [
           {
             "nome": "Alternância de Sujeitos",
             "descricao": "Enunciado: Possui alternância de sujeitos, representando um diálogo ou interação entre diferentes vozes.",
@@ -2803,7 +2803,7 @@
             "descricao_da_sentenca": "Oração: Não possui autor nesse sentido, pois não expressa necessariamente uma posição ou responsabilidade."
           }
         ],
-        "exemplos_de_enunciacao_e_sentenca": [
+        "exemplos_de_enunciado_e_sentenca": [
           {
             "nome": "Oração",
             "text": "\"Seria curioso, mas nem tanto extenso, e, aliás, desnecessário ao entendimento da obra.\" (Memórias Póstumas de Brás Cubas)",
@@ -2815,8 +2815,15 @@
             "descricao": "Expressa a visão irônica e crítica de Machado de Assis sobre a sociedade da época."
           }
         ],
-        "conclusao_enunciacao_e_sentenca": "A distinção entre enunciado e oração é fundamental para compreender os gêneros do discurso, pois estes são formas típicas de enunciados, com características específicas de conteúdo, estilo e composição que refletem a interação entre sujeitos e a construção de sentidos.",
-        "caracteristicas_da_enunciacao": [
+        "enunciado_vs_oracao": {
+            "enunciado": {
+                "definicao": "Unidade real de comunicação, com alternância de sujeitos, contato com a realidade e capacidade de dialogar com outros enunciados."
+            },
+            "oracao": {
+                "definicao": "Unidade gramatical, sem alternância de sujeitos, sem contato direto com a realidade e sem capacidade de dialogar com outros enunciados."
+            }
+        },
+        "caracteristicas_da_enunciado": [
           {
             "nome": "Conclusibilidade Específica",
             "descricao": "Refere-se à capacidade do enunciado de concluir um tema específico dentro dos limites do texto ou fala.",
@@ -2880,7 +2887,7 @@
             "descricao": "O falante/escrevente molda seu enunciado considerando a recepção do destinatário e as características do gênero."
           }
         ],
-        "exemplos_de_enunciacao_characteristicas": [
+        "exemplos_de_enunciado_characteristicas": [
           {
             "nome": "Conclusibilidade Específica",
             "example": "Uma telenovela que se aproxima do final, com resolução dos conflitos e casamento dos protagonistas."
