@@ -1,6 +1,6 @@
 Sonha em ingressar na Unicamp e precisa de ajuda para dominar a redação? 🤔
 
-"Redação Unicamp Acessível" é a plataforma gratuita que te conecta com a Dani Stella, sua professora digital de redações, especialista na  prova da Unicamp! 👩🏾‍🏫
+"Redação Unicamp Acessível" é a plataforma gratuita que te conecta com Dani Stella, sua professora digital de redações do Google Gemini, especialista na  prova da Unicamp! 👩🏾‍🏫
 
 Com a Dani Stella, você terá:
 
@@ -14,9 +14,9 @@ Com a Dani Stella, você terá:
 
 **Dani Stella, sua Professora Digital:**
 
-- Sua expertise na prova da Unicamp: Domine as características da
+- **Sua expertise na prova da Unicamp:** Domine as características da
 prova, os critérios de avaliação e as estratégias para se destacar.
-- Seu conhecimento sobre diferentes gêneros textuais: Amplie seu repertório e aprenda a escrever com leveza e criatividade.
-- Sua paixão por ajudar os alunos: Conte com o apoio e a orientação da Dani Stella para alcançar seus objetivos.
+- **Seu conhecimento sobre diferentes gêneros textuais:** Amplie seu repertório e aprenda a escrever com leveza e criatividade.
+- **Sua paixão por ajudar os alunos:** Conte com o apoio e a orientação da Dani Stella para alcançar seus objetivos.
 
 **Junte-se à comunidade "Redação Unicamp Acessível"!**   Converse com a Dani Stella agora mesmo e dê o primeiro passo rumo à conquista da sua vaga na Unicamp!
