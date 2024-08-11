@@ -63,23 +63,19 @@ with column1:
             st.markdown(f.read())
 
 with column2:
-    with st.expander("👩🏾‍🏫 Dani Stella: a professora digital que te guia na jornada da escrita"):
+    with st.expander("👩🏾‍🏫 Dani Stella: a professora digital que te guia na jornada da escrita autoral"):
         with open("documentacao/secao_4_dani_stella_a_professora_digital.md") as f:
-            _, dani_stella_imagem_col, _ = st.columns([0.3, 0.4, 0.3])
-
-            with dani_stella_imagem_col:
-                st.image("personas/dani_stella/dani_stella_the_digital_teacher_profile_picture.png", caption="")
-
-                bin_prompt_persona = json.dumps(chat_session.persona).encode('utf-8')
-
-                st.download_button(
-                    label="Download do prompt de Dani Stella: a professora digital de redações",
-                    data=bin_prompt_persona,
-                    file_name="prompt_dani_stella.json",
-                    mime="application/json",
-                )
+            bin_prompt_persona = json.dumps(chat_session.persona).encode('utf-8')
 
             st.markdown(f.read())
+
+            st.download_button(
+                label="Download do prompt de Dani Stella: a professora digital de redações",
+                data=bin_prompt_persona,
+                file_name="prompt_dani_stella.json",
+                mime="application/json",
+            )
+
 
     # Seção com provas passadas
     with st.expander("📚 Provas de Redação Passadas: desvendando os segredos da Unicamp"):
@@ -114,6 +110,16 @@ with st.expander("⚙️ Configuracoes do modelo de Inteligência Artificial Gem
             value=google_token,
             placeholder="Acesse `https://aistudio.google.com/app/apikey` para criar esta chave",
             label_visibility="collapsed"
+        )
+
+        models = ("gemini-1.5-flash", "gemini-1.5-pro", "gemini-1.5-pro-exp-0801")
+        model_idx = models.index(model_name)
+
+        model_name = st.selectbox(
+            "Modelo Gemini?",
+            models,
+            index=model_idx,
+            placeholder="Selecione seu modelo Gemini...",
         )
 
         if gemini_api_key:
@@ -164,9 +170,8 @@ if prompt_input:
 
     # Send prompt to chosen model and stream response
     with st.chat_message("assistant", avatar=teacher_emoji):
-        with st.spinner(""):
-            try:
-                response_stream = chat_session.send_stream_message(prompt_input)
-                response = st.write_stream(response_stream)
-            except Exception as e:
-                st.error("Error: " + str(e))
+        try:
+            response_stream = chat_session.send_stream_message(prompt_input)
+            response = st.write_stream(response_stream)
+        except Exception as e:
+            st.error("Error: " + str(e))

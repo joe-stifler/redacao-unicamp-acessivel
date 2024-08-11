@@ -74,6 +74,7 @@ class ChatSession:
             model: The new language model to use.
         """
         self.model = model
+        self.session_id = str(uuid.uuid4())  # Generate a new unique session ID
 
     def add_to_history_as_user(self, message):
         """Adds a user message to the history with start/end turn markers."""
