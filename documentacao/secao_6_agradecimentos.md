@@ -20,8 +20,4 @@ Um agradecimento especial ao Nícolas, que também contribuiu generosamente com 
 
 A cada nova linha de código, a cada avanço na inteligência artificial, a cada conquista na busca por um futuro mais inteligente e humano, a mente brilhante do Google DeepMind e do Google Gemini se revela.  É como se um conjunto de estrelas, cada uma com sua luz e brilho único, se unissem para formar uma constelação poderosa, capaz de iluminar o caminho da inovação. Agradecemos a todos que, com maestria, dedicação e paixão,  deram vida ao Google Gemini,  a chave que abriu as portas para a criação desta plataforma. Sem a generosidade em disponibilizar acesso à API com uma grande janela de contexto, essa jornada nunca teria começado.
 
-**E, claro, Joe!**
-
-Por fim, um agradecimento especial a Joe, que criou todo o prompt, me ajudou inteiramente com a criação da plataforma e me mantém motivada trabalhando incansavelmente! Sua energia e dedicação são a força motriz por trás dessa jornada.
-
 **Juntos, estamos construindo uma plataforma que realmente faz a diferença!**
