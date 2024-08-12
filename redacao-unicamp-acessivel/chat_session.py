@@ -1,18 +1,20 @@
-import uuid
-from llm_model import LLMBaseModel
-import json
+import uuid  # Importa o módulo uuid para gerar IDs únicos
+from llm_model import LLMBaseModel  # Importa a classe LLMBaseModel
+import json  # Importa o módulo json para trabalhar com arquivos JSON
 
-
+# Define a classe ChatSession para gerenciar o histórico do chat
 class ChatSession:
     """
-    Manages the conversation history for a turn-based chatbot
-    Follows the turn-based conversation guidelines for the Gemma
-    family of models documented at https://ai.google.dev/gemma/docs/formatting
+    Gerencia o histórico de conversas para um chatbot baseado em turnos.
+    Segue as diretrizes de conversação baseadas em turnos para a família de modelos Gemma,
+    documentadas em https://ai.google.dev/gemma/docs/formatting.
     """
 
+    # Define constantes para os papéis do usuário e do assistente
     __USER__ = "user"
     __ASSISTANT__ = "assistant"
 
+    # Define marcadores de início e fim de turno para o usuário e o assistente
     __START_TURN_USER__ = f"<start_of_turn>{__USER__}\n"
     __START_TURN_ASSISTANT__ = f"<start_of_turn>{__ASSISTANT__}\n"
     __END_TURN_USER__ = "<end_of_turn>\n"
@@ -20,22 +22,22 @@ class ChatSession:
 
     def __init__(self, system="", connection=None, persona_path=None):
         """
-        Initializes the chat state.
+        Inicializa o estado do chat.
 
         Args:
-            system: (Optional) System instructions or bot description.
-            connection: (Optional) SQLiteConnection object for storing chat history.
-            persona_path: Path to the folder containing persona JSON files.
+            system (str, optional): Instruções do sistema ou descrição do bot. Padrão: "".
+            connection (SQLiteConnection, optional): Objeto SQLiteConnection para armazenar o histórico do chat. Padrão: None.
+            persona_path (str, optional): Caminho para a pasta que contém os arquivos JSON da persona. Padrão: None.
         """
-        self.model = None
-        self.system = system
-        self.connection = connection
-        self.persona_path = persona_path
-        self.session_id = str(uuid.uuid4())  # Generate a unique session ID
-        self.persona = None  # Initialize persona as None
-        self.is_persona_initialized = False
+        self.model = None  # Inicializa o modelo de linguagem como None
+        self.system = system  # Define as instruções do sistema
+        self.connection = connection  # Define a conexão com o banco de dados
+        self.persona_path = persona_path  # Define o caminho para a pasta da persona
+        self.session_id = str(uuid.uuid4())  # Gera um ID de sessão único
+        self.persona = None  # Inicializa a persona como None
+        self.is_persona_initialized = False  # Inicializa a flag de inicialização da persona como False
 
-        # Create the chat_history table if it doesn't exist
+        # Cria a tabela chat_history se ela não existir
         if self.connection:
             self.connection.execute(
                 """
@@ -53,84 +55,94 @@ class ChatSession:
             )
 
     def load_persona(self, persona_path):
-        """Loads persona from a JSON file, allowing for subfolders."""
-        self.persona_path = persona_path
+        """Carrega a persona de um arquivo JSON, permitindo subpastas."""
+        self.persona_path = persona_path  # Define o caminho para a persona
 
-        # Check if a persona is specified
+        # Verifica se uma persona foi especificada
         if self.persona_path:
-            # Load persona JSON
+            # Carrega o arquivo JSON da persona
             with open(self.persona_path, "r") as f:
-                self.persona = json.load(f)
+                self.persona = json.load(f)  # Carrega a persona como um dicionário
 
     def is_model_initialized(self):
-        """Checks if the language model is initialized."""
-        return self.model is not None
+        """Verifica se o modelo de linguagem foi inicializado."""
+        return self.model is not None  # Retorna True se o modelo foi inicializado, False caso contrário
 
     def update_model(self, model: LLMBaseModel):
         """
-        Updates the language model used by the chat session.
+        Atualiza o modelo de linguagem usado pela sessão de chat.
 
         Args:
-            model: The new language model to use.
+            model (LLMBaseModel): O novo modelo de linguagem a ser usado.
         """
-        self.model = model
-        self.session_id = str(uuid.uuid4())  # Generate a new unique session ID
+        self.model = model  # Define o novo modelo
+        self.session_id = str(uuid.uuid4())  # Gera um novo ID de sessão único
 
     def add_to_history_as_user(self, message):
-        """Adds a user message to the history with start/end turn markers."""
+        """Adiciona uma mensagem do usuário ao histórico com marcadores de início/fim de turno."""
         if self.connection:
+            # Obtem o nome do modelo e a temperatura, se o modelo estiver inicializado
             model_name = self.model.name if self.model else ""
             temperature = self.model.temperature if self.model else -1
 
+            # Insere a mensagem do usuário no banco de dados
             self.connection.execute(
                 "INSERT INTO chat_history (session_id, role, message, model_name, persona_name, temperature) VALUES (?, ?, ?, ?, ?, ?)",
                 (self.session_id, self.__USER__, message, model_name, self.persona_path, temperature),
             )
 
     def add_to_history_as_assistant(self, message):
-        """Adds a assistant response to the history with start/end turn markers."""
+        """Adiciona uma resposta do assistente ao histórico com marcadores de início/fim de turno."""
         if self.connection:
+            # Obtem o nome do modelo e a temperatura, se o modelo estiver inicializado
             model_name = self.model.name if self.model else ""
             temperature = self.model.temperature if self.model else -1
 
+            # Insere a resposta do assistente no banco de dados
             self.connection.execute(
                 "INSERT INTO chat_history (session_id, role, message, model_name, persona_name, temperature) VALUES (?, ?, ?, ?, ?, ?)",
                 (self.session_id, self.__ASSISTANT__, message, model_name, self.persona_path, temperature),
             )
 
     def get_history(self):
-        """Returns the entire chat history as a single string."""
+        """Retorna todo o histórico do chat como uma lista de tuplas (role, message)."""
         if not self.connection:
-            return []
+            return []  # Retorna uma lista vazia se não houver conexão com o banco de dados
 
-        # Fetch history from the database
+        # Recupera o histórico do banco de dados
         chat_history = self.connection.query(
             f"SELECT role, message FROM chat_history WHERE session_id = '{self.session_id}'"
         )
         return chat_history
 
     def get_history_as_turns(self):
-        """Returns the entire chat history as a single string."""
+        """Retorna todo o histórico do chat como uma única string, formatado em turnos."""
         if not self.connection:
-            return ""
+            return ""  # Retorna uma string vazia se não houver conexão com o banco de dados
 
-        # Fetch history from the database
+        # Recupera o histórico do banco de dados
         chat_history = self.get_history()
 
+        # Cria uma lista para armazenar o histórico em turnos
         turn_history = []
 
+        # Itera sobre cada mensagem do histórico
         for role, message in chat_history:
+            # Adiciona a mensagem do usuário ao histórico em turnos
             if role == self.__USER__:
                 turn_history.append(
                     f"{self.__START_TURN_USER__}\n{message}\n{self.__END_TURN_USER__}\n"
                 )
+            # Adiciona a resposta do assistente ao histórico em turnos
             else:
                 turn_history.append(
                     f"{self.__START_TURN_ASSISTANT__}{message}{self.__END_TURN_ASSISTANT__}\n"
                 )
 
+        # Converte a lista para uma única string
         str_turn_history = "".join(turn_history)
 
+        # Retorna o histórico em turnos junto com uma mensagem de aviso
         return (
             "Chat history for your context:"
             + str_turn_history
@@ -139,26 +151,26 @@ class ChatSession:
 
     def send_stream_message(self, message):
         """
-        Handles sending a user message and getting a model response.
+        Envia uma mensagem do usuário e recebe a resposta do modelo em stream.
 
         Args:
-            message: The user's message.
+            message (str): Mensagem do usuário.
 
         Returns:
-            The model's response.
+            generator: Um gerador que retorna as partes da resposta em stream.
         """
-        self.add_to_history_as_user(message)
+        self.add_to_history_as_user(message)  # Adiciona a mensagem do usuário ao histórico
 
-        # Check if the model is initialized
+        # Verifica se o modelo foi inicializado
         if self.model is None:
-            # raise and exception with message asking to initilize the model
+            # Lança uma exceção se o modelo não estiver inicializado
             raise ValueError("Model not initialized. Please update the model.")
 
-        # Add persona to the prompt if it's not loaded yet
+        # Adiciona a persona ao prompt se ela não estiver carregada ainda
         if not self.is_persona_initialized:
-            self.is_persona_initialized = True
+            self.is_persona_initialized = True  # Define a flag como True
 
-            # Combine persona information into the prompt
+            # Combina as informações da persona com o prompt
             prompt = (
                 self.persona.get("beg_persona_content", "<beg_persona>\n")
                 + "\n"
@@ -170,15 +182,17 @@ class ChatSession:
                 + message
             )
         else:
+            # Se a persona já estiver carregada, usa o prompt como a mensagem do usuário
             prompt = message
 
+        # Envia o prompt para o modelo e recebe a resposta em stream
         response_stream = self.model.send_stream_message(prompt)
 
-        # Extract the message content from the generator response. Yield inside
+        # Extrai o conteúdo da mensagem do gerador da resposta. Yield dentro do loop para retornar em stream
         full_response = ""
         for chunk_content in response_stream:
             full_response += chunk_content
             yield chunk_content
 
-        # Add the full processed model response to the chat history
+        # Adiciona a resposta completa do modelo ao histórico do chat
         self.add_to_history_as_assistant(full_response)
