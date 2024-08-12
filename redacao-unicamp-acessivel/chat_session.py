@@ -35,6 +35,7 @@ class ChatSession:
         self.persona_path = persona_path  # Define o caminho para a pasta da persona
         self.session_id = str(uuid.uuid4())  # Gera um ID de sessão único
         self.persona = None  # Inicializa a persona como None
+        self.model_name = ""
         self.is_persona_initialized = False  # Inicializa a flag de inicialização da persona como False
 
         # Cria a tabela chat_history se ela não existir
@@ -68,14 +69,16 @@ class ChatSession:
         """Verifica se o modelo de linguagem foi inicializado."""
         return self.model is not None  # Retorna True se o modelo foi inicializado, False caso contrário
 
-    def update_model(self, model: LLMBaseModel):
+    def update_model(self, model_name, model: LLMBaseModel):
         """
         Atualiza o modelo de linguagem usado pela sessão de chat.
 
         Args:
+            model_name (str): O novo nome do modelo de linguagem a ser usado.
             model (LLMBaseModel): O novo modelo de linguagem a ser usado.
         """
         self.model = model  # Define o novo modelo
+        self.model_name = model_name
         self.session_id = str(uuid.uuid4())  # Gera um novo ID de sessão único
 
     def add_to_history_as_user(self, message):

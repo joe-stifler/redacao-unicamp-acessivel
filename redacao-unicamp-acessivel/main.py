@@ -157,14 +157,16 @@ with st.expander("⚙️ Configurações do modelo de Inteligência Artificial G
 
         # Verifica se a chave de API foi fornecida
         if gemini_api_key:
-            # Cria o modelo Gemini
-            gemini_model = create_gemini_model(
-                model_name,
-                gemini_api_key,
-                model_temperature
-            )
-            # Define o modelo Gemini para a sessão
-            chat_session.update_model(gemini_model)
+            if chat_session.model_name != model_name:
+                # Cria o modelo Gemini
+                gemini_model = create_gemini_model(
+                    model_name,
+                    gemini_api_key,
+                    model_temperature
+                )
+                # Define o modelo Gemini para a sessão
+                chat_session.update_model(model_name, gemini_model)
+
             # Define a flag como True, indicando que o modelo foi inicializado
             is_model_initialized = True
     else:
@@ -214,8 +216,10 @@ if prompt_input:
         try:
             # Envia o prompt para o modelo e obtem a resposta como um stream
             response_stream = chat_session.send_stream_message(prompt_input)
-            # Exibe a resposta do modelo no chat
-            response = st.write_stream(response_stream)
+
+            with st.spinner('Processando mensagem...'):
+                # Exibe a resposta do modelo no chat
+                response = st.write_stream(response_stream)
         except Exception as e:
             # Exibe uma mensagem de erro se ocorrer algum problema
             st.error("Error: " + str(e))
