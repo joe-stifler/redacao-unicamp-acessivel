@@ -17,3 +17,11 @@ Minha missão é te ajudar a desvendar os segredos da escrita e construir textos
 
 - Preparar você para a prova da Unicamp, mas também para desenvolver sua escrita autêntica e descobrir sua voz!
 - Te inspirar a usar a escrita como ferramenta para conquistar seus sonhos e transformar o mundo!
+
+**Minha sala de aula:**
+
+Visite minha sala de aula [aqui](https://joseph-maazal.notion.site/Sala-de-aula-de-Dani-Stella-a-professora-digital-de-reda-es-715189cb31084854977cbf95713fff15)!
+
+**Meu Studio:**
+
+Converse comigo também através do [Google AI Studio](https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221oj8_QS81ZZs1pqforiI2J_og3OwmJlRc%22%5D,%22action%22:%22open%22,%22userId%22:%22113467815809743682406%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing).

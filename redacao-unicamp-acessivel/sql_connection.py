@@ -1,93 +1,103 @@
-import streamlit as st
-from streamlit.connections import ExperimentalBaseConnection
-import sqlite3
-import pandas as pd
+import streamlit as st  # Importa o módulo Streamlit para a interface web
+from streamlit.connections import ExperimentalBaseConnection  # Importa a classe base para conexões personalizadas do Streamlit
+import sqlite3  # Importa o módulo SQLite3 para interagir com bancos de dados SQLite
+import pandas as pd  # Importa o módulo Pandas para trabalhar com DataFrames
 
-
+# Define a classe SQLiteConnection para interagir com bancos de dados SQLite
 class SQLiteConnection(ExperimentalBaseConnection[sqlite3.Connection]):
     """
-    A custom Streamlit connection class for interacting with SQLite3 databases.
+    Classe de conexão personalizada do Streamlit para interagir com bancos de dados SQLite3.
 
-    This class extends Streamlit's ExperimentalBaseConnection and provides methods for
-    connecting to a SQLite3 database, executing SQL queries, and retrieving results as
-    Pandas DataFrames. It does not rely on secrets for local database connections.
+    Esta classe estende a classe ExperimentalBaseConnection do Streamlit e fornece métodos para
+    conectar a um banco de dados SQLite3, executar consultas SQL e recuperar resultados como
+    DataFrames do Pandas. Ela não depende de segredos para conexões com bancos de dados locais.
     """
 
     def __init__(self, database: str, **kwargs) -> None:
         """
-        Initializes the SQLiteConnection.
+        Inicializa a classe SQLiteConnection.
 
         Args:
-            database: Path to the SQLite3 database file.
-            **kwargs: Additional arguments for the connection.
+            database (str): Caminho para o arquivo do banco de dados SQLite3.
+            **kwargs: Argumentos adicionais para a conexão.
         """
-        self.database = database
-        super().__init__(**kwargs)
+        self.database = database  # Armazena o caminho do banco de dados
+        super().__init__(**kwargs)  # Chama o construtor da classe base
 
     def _connect(self, **kwargs) -> sqlite3.Connection:
         """
-        Connects to the SQLite3 database.
+        Conecta ao banco de dados SQLite3.
 
         Args:
-            **kwargs: Additional arguments for the connection.
+            **kwargs: Argumentos adicionais para a conexão.
 
         Returns:
-            SQLite3 connection object.
+            sqlite3.Connection: Objeto de conexão SQLite3.
         """
+        # Conecta ao banco de dados SQLite3 usando o caminho do arquivo e os argumentos adicionais
         return sqlite3.connect(database=self.database, **kwargs)
 
     def cursor(self) -> sqlite3.Cursor:
         """
-        Returns a cursor for the connection.
+        Retorna um cursor para a conexão.
 
         Returns:
-            SQLite3 cursor object.
+            sqlite3.Cursor: Objeto de cursor SQLite3.
         """
-        return self._instance.cursor()
+        return self._instance.cursor()  # Retorna o cursor da instância da conexão
 
     def execute(self, query: str, *args) -> None:
         """
-        Executes an SQL query on the database.
+        Executa uma consulta SQL no banco de dados.
 
         Args:
-            query: SQL query to execute.
-            params: Parameters for the query.
+            query (str): Consulta SQL a ser executada.
+            *args: Parâmetros para a consulta.
         """
-        cursor = self.cursor()
+        cursor = self.cursor()  # Obtem um cursor para a conexão
 
-        cursor.execute(query, *args)
-        self._instance.commit()
+        cursor.execute(query, *args)  # Executa a consulta com os parâmetros fornecidos
+        self._instance.commit()  # Confirma a transação no banco de dados
 
     def query(self, query: str, ttl: int = 3600) -> pd.DataFrame:
         """
-        Executes an SQL query on the database.
+        Executa uma consulta SQL no banco de dados e retorna os resultados como um DataFrame do Pandas.
 
         Args:
-            query: SQL query to execute.
-            ttl: Cache time-to-live (in seconds).
-            **kwargs: Additional arguments for the query.
+            query (str): Consulta SQL a ser executada.
+            ttl (int, optional): Tempo de vida do cache (em segundos). Padrão: 3600 (1 hora).
+            **kwargs: Argumentos adicionais para a consulta.
 
         Returns:
-            Pandas DataFrame with the query results.
+            pd.DataFrame: DataFrame do Pandas com os resultados da consulta.
         """
 
+        # Função interna para executar a consulta e retornar os resultados
         def _query(query: str) -> pd.DataFrame:
-            cursor = self.cursor()
-            query_result = cursor.execute(query)
-            return query_result.fetchall()
+            cursor = self.cursor()  # Obtem um cursor para a conexão
+            query_result = cursor.execute(query)  # Executa a consulta
+            return query_result.fetchall()  # Retorna os resultados como uma lista de tuplas
 
+        # Retorna os resultados da consulta como um DataFrame do Pandas
         return _query(query)
 
-
+# Define uma função para obter a sessão do banco de dados, usando o cache do Streamlit
 @st.cache_resource
 def get_database_session():
-    # Database connection
+    """
+    Obtem a sessão do banco de dados SQLite.
+
+    Returns:
+        sqlite3.Connection: Objeto de conexão SQLite3.
+    """
+    # Cria a conexão com o banco de dados
     conn = st.connection(
-        "sqlite",
-        type=SQLiteConnection,
-        # Pass the database path directly
+        "sqlite",  # Nome da conexão
+        type=SQLiteConnection,  # Classe de conexão personalizada
+        # Passa o caminho para o banco de dados diretamente
         database="chat_history.db",
-        check_same_thread=False,
+        check_same_thread=False,  # Desabilita a verificação de thread para conexões locais
     )
 
+    # Retorna a conexão com o banco de dados
     return conn
