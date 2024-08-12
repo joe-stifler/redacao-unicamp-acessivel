@@ -1,6 +1,16 @@
 ## Agradecimentos
 
-**Dani Stella: A Professora Digital**
+**A Universidade de Campinas**
+
+Em primeiro lugar, um agradecimento profundo à [Universidade de Campinas (Unicamp)](https://unicamp.br/) por disponibilizar, de forma gratuita, um material de alta qualidade [[Redações comentadas de anos anteriores](https://www.comvest.unicamp.br/vestibulares-anteriores/1a-fase-2a-fase-comentadas/) e o livro [A Redação no Vestibular da Unicamp](https://loja.editoraunicamp.com.br/linguas-e-linguistica/redacao-no-vestibular-unicamp-a-o-que-e-como-se-avalia-489/p)] para a prova de redação do vestibular. Em especial, à Comissão Organizadora da prova de redação, que se dedicou a oferecer um material tão rico, com redações comentadas de forma detalhada e perspicaz.
+
+Sem esse material valioso, a persona da Dani Stella, que guia os alunos nessa jornada, e a plataforma "Redação Unicamp Acessível" não seriam possíveis.
+
+Sua generosidade e compromisso com a educação são inspiradores e contribuem significativamente para democratizar o acesso ao conhecimento e promover a excelência na escrita.
+
+Gratidão!
+
+**Dani Stella: A Professora Apaixonada**
 
 Em primeiro lugar, um agradecimento especial à [Dani Stella (a humana)](https://www.instagram.com/danistellacg/) por ser a musa inspiradora de minha linda persona. Os valores que carrego refletem muito quem ela é: a paixão pelo ensino, a busca por conhecimento, a dedicação em inspirar mentes brilhantes e o compromisso com a justiça na avaliação. Dani Stella, você é a força motriz por trás dessa plataforma que sonha em ajudar alunos a desvendar os segredos da escrita e alcançar o sucesso no vestibular da Unicamp.
 
@@ -18,6 +28,6 @@ Um agradecimento especial ao [Nícolas](https://www.instagram.com/nicolas_samuel
 
 **Google Gemini e Google DeepMind**
 
-A cada nova linha de código, a cada avanço na inteligência artificial, a cada conquista na busca por um futuro mais inteligente e humano, a mente brilhante do [Google DeepMind](https://deepmind.google/) e do [Google Gemini](https://gemini.google.com/app?utm_source=google&utm_medium=cpc&utm_campaign=2024enGB_gemfeb&gad_source=1) se revela.  É como se um conjunto de estrelas, cada uma com sua luz e brilho único, se unissem para formar uma constelação poderosa, capaz de iluminar o caminho da inovação. Agradecemos a todos que, com maestria, dedicação e paixão,  deram vida ao [Google Gemini](https://gemini.google.com/app?utm_source=google&utm_medium=cpc&utm_campaign=2024enGB_gemfeb&gad_source=1),  a chave que abriu as portas para a criação desta plataforma. Sem a generosidade em disponibilizar acesso à API com uma grande janela de contexto, essa jornada nunca teria começado.
+A cada nova linha de código, a cada avanço na inteligência artificial, a cada conquista na busca por um futuro mais inteligente e humano, a mente brilhante do [Google DeepMind](https://deepmind.google/) e do [Google Gemini](https://gemini.google.com/app) se revela.  É como se um conjunto de estrelas, cada uma com sua luz e brilho único, se unissem para formar uma constelação poderosa, capaz de iluminar o caminho da inovação. Agradecemos a todos que, com maestria, dedicação e paixão,  deram vida ao [Google Gemini](https://gemini.google.com/app?utm_source=google&utm_medium=cpc&utm_campaign=2024enGB_gemfeb&gad_source=1),  a chave que abriu as portas para a criação desta plataforma. Sem a generosidade em disponibilizar acesso à API com uma grande janela de contexto, essa jornada nunca teria começado.
 
 **Juntos, estamos construindo uma plataforma que realmente faz a diferença!**
