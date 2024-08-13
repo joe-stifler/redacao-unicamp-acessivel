@@ -17,41 +17,22 @@ st.set_page_config(
     initial_sidebar_state="expanded",  # Define a barra lateral como expandida por padrão
 )
 
-# Conexão com o banco de dados SQLite
-conn = get_database_session()
-
-# Criação do objeto ChatSession (apenas uma vez)
-if "chat_session" not in st.session_state:
-    # Se a chave "chat_session" não existe na sessão do usuário, cria um novo objeto ChatSession
-    st.session_state.chat_session = ChatSession(connection=conn)
-
-# Define a variável chat_session como a sessão do usuário
-chat_session = st.session_state.chat_session
+# --- Obtenção dos parâmetros da URL ---
+google_token = st.query_params.get("google_token", "")  # Obtem o token do Google da URL
+persona_path = "personas/dani_stella/dani_stella.json" # Obtem o nome da persona da URL
+model_name = st.query_params.get("model_name", "gemini-1.5-flash") # Obtem o nome do modelo da URL
 
 # Função para criar um modelo Gemini (cache_resource garante que o modelo seja carregado apenas uma vez)
 @st.cache_resource
-def create_gemini_model(model_name, gemini_api_key, model_temperature):
-    """Cria um modelo Gemini com base nos parâmetros fornecidos."""
-    return GeminiModel(
-        model_name=model_name,
-        api_key=gemini_api_key,
-        temperature=float(model_temperature),
-    )
-
-# --- Obtenção dos parâmetros da URL ---
-google_token = st.query_params.get("google_token", "")  # Obtem o token do Google da URL
-persona_name = st.query_params.get("persona_name", "dani_stella") # Obtem o nome da persona da URL
-model_familly = st.query_params.get("model_familly", "Gemini") # Obtem a familia do modelo da URL
-model_name = st.query_params.get("model_name", "gemini-1.5-flash") # Obtem o nome do modelo da URL
-model_temperature = st.query_params.get("model_temperature", 1.0) # Obtem a temperatura do modelo da URL
-
-# --- Carregamento da Persona ---
-chat_session.load_persona(
-    "personas/" + persona_name + "/" + persona_name + ".json"
-) # Carrega a persona do arquivo JSON
+def create_chat_session():
+    """Cria uma sessao de Chat."""
+    # Conexão com o banco de dados SQLite
+    conn = get_database_session()
+    chat_session = ChatSession(connection=conn, persona_path=persona_path)
+    return chat_session
 
 # Flag para indicar se o modelo foi inicializado
-is_model_initialized = False
+chat_session = create_chat_session()
 
 # --- Layout da página ---
 _, profile_image, _ = st.columns([0.35, 0.3, 0.35])  # Divide a página em três colunas
@@ -83,14 +64,12 @@ with column2:
         # Lê e exibe o conteúdo do arquivo Markdown
         with open("documentacao/secao_4_dani_stella_a_professora_digital.md") as f:
             # Converte a persona para JSON e codifica em UTF-8
-            bin_prompt_persona = json.dumps(chat_session.persona).encode('utf-8')
-
             st.markdown(f.read())
 
             # Botão para download do prompt da persona
             st.download_button(
                 label="Download do prompt de Dani Stella: a professora digital de redações",
-                data=bin_prompt_persona,
+                data=json.dumps(chat_session.persona, indent=4),
                 file_name="prompt_dani_stella.json",
                 mime="application/json",
             )
@@ -120,27 +99,22 @@ with column2:
         with open("documentacao/secao_6_agradecimentos.md") as f:
             st.markdown(f.read())
 
+# Emojis do aluno e do professor
+student_emoji = "🧑🏾‍🎓"
+teacher_emoji = "👩🏾‍🏫"
+
+# --- Entrada do usuário ---
+prompt_input = st.chat_input("Me pergunte qualquer coisa!")
+
 # --- Seção de configuração do modelo Gemini ---
 with st.expander("⚙️ Configurações do modelo de Inteligência Artificial Gemini", expanded=True):
-    # Verifica se a familia de modelo é Mock
-    if model_familly == "Mock":
-        # Inicializa o modelo Mock
-        chat_session.update_model(
-            MockModel(model_name=model_name, temperature=float(model_temperature))
-        )
-
-        # Define a flag como True, indicando que o modelo foi inicializado
-        is_model_initialized = True
-
-    # Verifica se a familia de modelo é Gemini
-    elif model_familly == "Gemini":
+    with st.form("gemini_form", border=False):
         # Campo de entrada para a chave de API do Google Gemini
         gemini_api_key = st.text_input(
-            "Entre com sua chave de API Gemini",
+            "Entre com sua chave de API Gemini (e em seguida clique no botão abaixo)",
             type="password",  # Define o campo como "password" para ocultar a chave
             value=google_token,  # Define o valor inicial da chave como o token obtido da URL
             placeholder="Acesse `https://aistudio.google.com/app/apikey` para criar esta chave",
-            label_visibility="collapsed"  # Oculta o rótulo do campo
         )
 
         # Lista dos modelos Gemini disponíveis
@@ -149,47 +123,41 @@ with st.expander("⚙️ Configurações do modelo de Inteligência Artificial G
 
         # Caixa de seleção para escolher o modelo Gemini
         model_name = st.selectbox(
-            "Modelo Gemini?",
+            "Selecione seu modelo Gemini (e em seguida clique no botão abaixo)",
             models,
             index=model_idx,  # Define o índice inicial da caixa de seleção
             placeholder="Selecione seu modelo Gemini...",
         )
 
-        # Verifica se a chave de API foi fornecida
-        if gemini_api_key:
-            if chat_session.model_name != model_name:
-                # Cria o modelo Gemini
-                gemini_model = create_gemini_model(
-                    model_name,
-                    gemini_api_key,
-                    model_temperature
-                )
-                # Define o modelo Gemini para a sessão
-                chat_session.update_model(model_name, gemini_model)
+        submitted = st.form_submit_button("Atualize a chave de acesso e o modelo Gemini")
 
-            # Define a flag como True, indicando que o modelo foi inicializado
-            is_model_initialized = True
-    else:
-        # Lança um erro se a familia de modelo for inválida
-        raise "Familia de LLM inválida"
+        if submitted:
+            if gemini_api_key != "":
+                gemini_model = GeminiModel(
+                    model_name=model_name,
+                    api_key=gemini_api_key,
+                    temperature=1.0,
+                )
+            else:
+                gemini_model = None
+
+            chat_session.update_model(model_name, gemini_model)
 
 # --- Mensagem de alerta se o modelo não estiver inicializado ---
-if not is_model_initialized:
+if chat_session.model is None:
     st.warning(
         "Por favor, adicione nas configurações acima sua chave de API do Google Gemini. Em seguida, comece a conversar com Dani Stella. Para criar uma chave de API nova, acesse: https://aistudio.google.com/app/apikey"
     )
+    st.stop()
 else:
     # Mensagem informativa se o modelo foi inicializado
     st.info(
         "Dani Stella, sua professora digital de redações da Unicamp, está ansiosa para lhe ajudar. Informe no chat abaixo o número e ano da proposta que escolheu junto a sua redação para que Dani Stella lhe forneça uma avaliação detalhada."
     )
 
-# Emojis do aluno e do professor
-student_emoji = "🧑🏾‍🎓"
-teacher_emoji = "👩🏾‍🏫"
-
 # --- Exibição do histórico do chat ---
 chat_history = chat_session.get_history()  # Obtem o histórico do chat
+
 for role, message in chat_history:
     if role == "assistant":
         avatar = teacher_emoji  # Define o avatar do professor
@@ -197,13 +165,6 @@ for role, message in chat_history:
         avatar = student_emoji  # Define o avatar do aluno
     with st.chat_message(role, avatar=avatar):  # Exibe a mensagem do chat
         st.markdown(message)
-
-# --- Entrada do usuário ---
-prompt_input = st.chat_input("Me pergunte qualquer coisa!")
-
-# --- Verificação se o modelo está inicializado ---
-if not chat_session.is_model_initialized():
-    st.stop()
 
 # --- Envio do prompt para o modelo ---
 if prompt_input:

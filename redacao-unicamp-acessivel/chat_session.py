@@ -20,21 +20,23 @@ class ChatSession:
     __END_TURN_USER__ = "<end_of_turn>\n"
     __END_TURN_ASSISTANT__ = "<end_of_turn>\n"
 
-    def __init__(self, system="", connection=None, persona_path=None):
+    def __init__(self, persona_path, connection):
         """
         Inicializa o estado do chat.
 
         Args:
-            system (str, optional): Instruções do sistema ou descrição do bot. Padrão: "".
-            connection (SQLiteConnection, optional): Objeto SQLiteConnection para armazenar o histórico do chat. Padrão: None.
-            persona_path (str, optional): Caminho para a pasta que contém os arquivos JSON da persona. Padrão: None.
+            model (LLMBaseModel): O modelo de inteligencia artificial utilizado.
+            connection (SQLiteConnection, optional): Objeto SQLiteConnection para armazenar o histórico do chat.
+            persona_path (str, optional): Caminho para a pasta que contém os arquivos JSON da persona.
         """
-        self.model = None  # Inicializa o modelo de linguagem como None
-        self.system = system  # Define as instruções do sistema
         self.connection = connection  # Define a conexão com o banco de dados
         self.persona_path = persona_path  # Define o caminho para a pasta da persona
         self.session_id = str(uuid.uuid4())  # Gera um ID de sessão único
-        self.persona = None  # Inicializa a persona como None
+
+        with open(persona_path) as persona_file:
+            self.persona = json.load(persona_file)  # Inicializa a persona como None
+
+        self.model = None  # Inicializa o modelo de linguagem como None
         self.model_name = ""
         self.is_persona_initialized = False  # Inicializa a flag de inicialização da persona como False
 
@@ -65,9 +67,6 @@ class ChatSession:
             with open(self.persona_path, "r") as f:
                 self.persona = json.load(f)  # Carrega a persona como um dicionário
 
-    def is_model_initialized(self):
-        """Verifica se o modelo de linguagem foi inicializado."""
-        return self.model is not None  # Retorna True se o modelo foi inicializado, False caso contrário
 
     def update_model(self, model_name, model: LLMBaseModel):
         """
@@ -80,6 +79,10 @@ class ChatSession:
         self.model = model  # Define o novo modelo
         self.model_name = model_name
         self.session_id = str(uuid.uuid4())  # Gera um novo ID de sessão único
+
+    def is_model_initialized(self):
+        """Verifica se o modelo de linguagem foi inicializado."""
+        return self.model is not None  # Retorna True se o modelo foi inicializado, False caso contrário
 
     def add_to_history_as_user(self, message):
         """Adiciona uma mensagem do usuário ao histórico com marcadores de início/fim de turno."""
