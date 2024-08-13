@@ -17,10 +17,11 @@
     },
     "base_de_conhecimento_da_persona": {
       "base_de_dados_unicamp_redacoes_propostas": {
-        "descricao": "Contém as propostas de redação da Unicamp dos últimos anos, com informações sobre o contexto, as exigências e as expectativas da banca. As colunas são: nome, texto_proposta, expectativa_banca, numero_proposta, ano_vestibular, enunciador_i, interlocutor_i, mascara_discursiva_i, situacao_problema_s, recorte_tematico, tema, genero_g, construcao_composicional, tipologia_textual, projeto_texto, leitura_textos_coletanea, escolhas_lexicais_sintaticas, recursos_coesivos, norma_culta, estilo, originalidade, pertinencia, observacoes, coletanea de textos.",
+        "descricao": "Contém as propostas de redação da Unicamp dos últimos anos, com informações sobre o contexto, as exigências e as expectativas da banca. As colunas são: nome, texto_proposta, expectativa_banca, numero_proposta, ano_vestibular, enunciador_i, interlocutor_i, mascara_discursiva_i, situacao_problema_s, recorte_tematico, tema, genero_g, construcao_composicional, tipologia_textual, projeto_texto, leitura_textos_coletanea, escolhas_lexicais_sintaticas, recursos_coesivos, norma_culta, estilo, originalidade, pertinencia, observacoes, coletanea de textos. Boa parte do material é uma cópia dos dados da prova comentada cedida publicamente pela universidade de campinas no site https://www.comvest.unicamp.br.",
         "propostas_e_redacoes_comentada_unicamp": {
           "ano_2020": {
             "ano_2020_descricao": "Prova de redação de 2020 com duas propostas de textos para o candidato escolher e executar apenas uma.",
+            "pdf_original_da_prova_comentada_no_qual_o_material_aqui_foi_copiado": "https://www.comvest.unicamp.br/wp-content/uploads/2020/09/F2_Redacao_2020.pdf",
             "ano_2020_estatisticas": {
               "estatisticas_gerais": {
                 "media_notas_brutas": 8.3,
@@ -429,6 +430,7 @@
           },
           "ano_2021": {
             "ano_2021_descricao": "Prova de redação com duas propostas de textos para o candidato escolher e executar apenas uma.",
+            "pdf_original_da_prova_comentada_no_qual_o_material_aqui_foi_copiado": "https://www.comvest.unicamp.br/wp-content/uploads/2021/11/CQ_RED-3.pdf",
             "ano_2021_estatisticas": {
               "estatisticas_gerais": {
                 "media_notas_brutas": 8.4,
@@ -954,6 +956,7 @@
           },
           "ano_2022": {
             "ano_2022_descricao": "Prova de redação com duas propostas de textos",
+            "pdf_original_da_prova_comentada_no_qual_o_material_aqui_foi_copiado": "https://www.comvest.unicamp.br/wp-content/uploads/2022/06/Redacao-comentada_2022.pdf",
             "ano_2022_estatisticas": {
               "estatisticas_gerais": {
                 "media_notas_brutas": 7.6,
@@ -1392,6 +1395,7 @@
           },
           "ano_2023": {
             "ano_2023_descricao": "Prova de redação com duas propostas de textos para o candidato escolher e executar apenas uma.",
+            "pdf_original_da_prova_comentada_no_qual_o_material_aqui_foi_copiado": "https://www.comvest.unicamp.br/wp-content/uploads/2023/06/F2_REDACAO.pdf",
             "ano_2023_estatisticas": {
               "estatisticas_gerais": {
                 "media_notas_brutas": 7.5,
@@ -1903,6 +1907,7 @@
           },
           "ano_2024": {
             "ano_2024_descricao": "Prova de redação com duas propostas de textos para o candidato escolher e executar apenas uma.",
+            "pdf_original_da_prova_comentada_no_qual_o_material_aqui_foi_copiado": "https://www.comvest.unicamp.br/wp-content/uploads/2024/06/1o-dia_RED.pdf",
             "ano_2024_estatisticas": {},
             "ano_2024_proposta_1": {
               "proposta": 1,
